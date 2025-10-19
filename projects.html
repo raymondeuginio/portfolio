@@ -39,29 +39,95 @@
       crossorigin="anonymous"
       defer
     ></script>
+    <style>
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(24px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .fade-up {
+        opacity: 0;
+        animation: fadeUp 0.9s ease forwards;
+      }
+
+      .project-card {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .project-card::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(135deg, rgba(254, 124, 37, 0.12), rgba(255, 179, 108, 0.28));
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        pointer-events: none;
+      }
+
+      .project-card:hover::before {
+        opacity: 1;
+      }
+
+      .project-card > * {
+        position: relative;
+        z-index: 10;
+      }
+
+      .floating-blur {
+        animation: float 12s ease-in-out infinite;
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translate3d(0, 0, 0) scale(1);
+        }
+        50% {
+          transform: translate3d(0, -16px, 0) scale(1.05);
+        }
+      }
+    </style>
   </head>
-  <body class="bg-base text-dark font-poppins">
-    <header class="border-b border-gray-200 bg-base">
+<body class="relative min-h-screen overflow-x-hidden bg-gradient-to-br from-[#f8fbff] via-[#fff5ec] to-[#ffe0d4] text-dark font-poppins">
+    <div class="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
+      <div class="floating-blur absolute -left-32 top-24 h-72 w-72 rounded-full bg-[#ffd8b5] opacity-70 blur-3xl"></div>
+      <div class="floating-blur absolute bottom-[-6rem] right-12 h-96 w-96 rounded-full bg-[#c9e7ff] opacity-60 blur-3xl" style="animation-delay: 4s"></div>
+      <div class="floating-blur absolute left-1/2 top-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#ffe1f2] opacity-40 blur-3xl" style="animation-delay: 7s"></div>
+    </div>
+
+    <header class="border-b border-white/40 bg-white/70 backdrop-blur">
       <div class="mx-auto flex max-w-5xl items-center justify-between px-6 py-6">
         <a href="/" class="text-lg font-semibold tracking-wide">REKS</a>
         <nav class="flex gap-6 text-sm font-medium text-muted">
-          <a href="/" class="hover:text-accent transition-colors">Home</a>
+          <a href="/" class="transition-colors hover:text-accent">Home</a>
           <a href="/projects.html" class="text-accent">Projects</a>
-          <a href="/contact.html" class="hover:text-accent transition-colors">Contact</a>
+          <a href="/contact.html" class="transition-colors hover:text-accent">Contact</a>
         </nav>
       </div>
     </header>
 
-    <main class="mx-auto max-w-5xl px-6 py-16">
-      <div class="mb-12 space-y-3 text-center">
-        <h1 class="text-3xl font-semibold sm:text-4xl">Projects</h1>
+   <main class="relative mx-auto max-w-5xl px-6 py-16">
+      <div class="mb-14 space-y-3 text-center">
+        <span class="inline-flex rounded-full bg-white/80 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-accent">
+          Featured Builds
+        </span>
+        <h1 class="text-3xl font-semibold sm:text-4xl">
+          Projects
+        </h1>
         <p class="text-base text-muted">
           A collection of hands-on builds highlighting problem solving, maintainable code, and simple experiences.
         </p>
       </div>
 
-      <div class="grid gap-8 md:grid-cols-2">
-        <article class="group flex flex-col rounded-2xl bg-white shadow-md transition hover:-translate-y-1 hover:shadow-lg">
+      <div class="grid gap-10 md:grid-cols-2">
+        <article class="project-card group fade-up flex flex-col rounded-3xl bg-white/80 shadow-lg ring-1 ring-white/40 backdrop-blur transition duration-500 hover:-translate-y-2 hover:shadow-2xl hover:ring-accent/40" style="animation-delay: 0.1s">
           <img src="/assets/screenshots/regina-1.png" alt="Regina Salon Screenshot" class="h-56 w-full rounded-t-2xl object-cover" />
           <div class="flex flex-1 flex-col gap-4 p-6">
             <div>
@@ -76,7 +142,7 @@
               <span class="rounded-full bg-card px-3 py-1">TailwindCSS</span>
             </div>
             <div class="mt-auto flex items-center justify-between pt-4">
-              <a href="/projects/regina-salon.html" class="inline-flex items-center gap-2 rounded-full bg-accent px-5 py-2 text-sm font-semibold text-white transition hover:shadow-lg">
+              <a href="/projects/regina-salon.html" class="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-accent to-[#ff9b4b] px-5 py-2 text-sm font-semibold text-white shadow-lg shadow-accent/30 transition hover:shadow-2xl">
                 View Details
                 <i class="fa-solid fa-arrow-right"></i>
               </a>
@@ -87,7 +153,7 @@
           </div>
         </article>
 
-        <article class="group flex flex-col rounded-2xl bg-white shadow-md transition hover:-translate-y-1 hover:shadow-lg">
+        <article class="project-card group fade-up flex flex-col rounded-3xl bg-white/80 shadow-lg ring-1 ring-white/40 backdrop-blur transition duration-500 hover:-translate-y-2 hover:shadow-2xl hover:ring-accent/40" style="animation-delay: 0.2s">
           <img src="/assets/screenshots/ollies-1.png" alt="Ollie's Café Screenshot" class="h-56 w-full rounded-t-2xl object-cover" />
           <div class="flex flex-1 flex-col gap-4 p-6">
             <div>
@@ -102,7 +168,7 @@
               <span class="rounded-full bg-card px-3 py-1">TailwindCSS</span>
             </div>
             <div class="mt-auto flex items-center justify-between pt-4">
-              <a href="/projects/ollies-cafe.html" class="inline-flex items-center gap-2 rounded-full bg-accent px-5 py-2 text-sm font-semibold text-white transition hover:shadow-lg">
+              <a href="/projects/ollies-cafe.html" class="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-accent to-[#ff9b4b] px-5 py-2 text-sm font-semibold text-white shadow-lg shadow-accent/30 transition hover:shadow-2xl">
                 View Details
                 <i class="fa-solid fa-arrow-right"></i>
               </a>
@@ -113,7 +179,7 @@
           </div>
         </article>
 
-        <article class="group flex flex-col rounded-2xl bg-white shadow-md transition hover:-translate-y-1 hover:shadow-lg">
+        <article class="project-card group fade-up flex flex-col rounded-3xl bg-white/80 shadow-lg ring-1 ring-white/40 backdrop-blur transition duration-500 hover:-translate-y-2 hover:shadow-2xl hover:ring-accent/40" style="animation-delay: 0.3s">
           <img src="/assets/screenshots/todo-1.png" alt="To-Do List Web App Screenshot" class="h-56 w-full rounded-t-2xl object-cover" />
           <div class="flex flex-1 flex-col gap-4 p-6">
             <div>
@@ -128,7 +194,7 @@
               <span class="rounded-full bg-card px-3 py-1">MongoDB</span>
             </div>
             <div class="mt-auto flex items-center justify-between pt-4">
-              <a href="/projects/todo-list.html" class="inline-flex items-center gap-2 rounded-full bg-accent px-5 py-2 text-sm font-semibold text-white transition hover:shadow-lg">
+              <a href="/projects/todo-list.html" class="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-accent to-[#ff9b4b] px-5 py-2 text-sm font-semibold text-white shadow-lg shadow-accent/30 transition hover:shadow-2xl">
                 View Details
                 <i class="fa-solid fa-arrow-right"></i>
               </a>
@@ -139,7 +205,7 @@
           </div>
         </article>
 
-        <article class="group flex flex-col rounded-2xl bg-white shadow-md transition hover:-translate-y-1 hover:shadow-lg">
+<article class="project-card group fade-up flex flex-col rounded-3xl bg-white/80 shadow-lg ring-1 ring-white/40 backdrop-blur transition duration-500 hover:-translate-y-2 hover:shadow-2xl hover:ring-accent/40" style="animation-delay: 0.4s">
           <img src="/assets/screenshots/finance-1.png" alt="Personal Financial Tracker Screenshot" class="h-56 w-full rounded-t-2xl object-cover" />
           <div class="flex flex-1 flex-col gap-4 p-6">
             <div>
@@ -154,7 +220,7 @@
               <span class="rounded-full bg-card px-3 py-1">TailwindCSS</span>
             </div>
             <div class="mt-auto flex items-center justify-between pt-4">
-              <a href="/projects/finance-tracker.html" class="inline-flex items-center gap-2 rounded-full bg-accent px-5 py-2 text-sm font-semibold text-white transition hover:shadow-lg">
+        <a href="/projects/finance-tracker.html" class="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-accent to-[#ff9b4b] px-5 py-2 text-sm font-semibold text-white shadow-lg shadow-accent/30 transition hover:shadow-2xl">
                 View Details
                 <i class="fa-solid fa-arrow-right"></i>
               </a>
@@ -167,7 +233,7 @@
       </div>
     </main>
 
-    <footer class="border-t border-gray-200 bg-base">
+    <footer class="border-t border-white/50 bg-white/70 backdrop-blur">
       <div class="mx-auto max-w-5xl px-6 py-8 text-sm text-muted">
         © 2025 Raymond Euginio Kent Sanjaya
       </div>
