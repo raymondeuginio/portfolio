@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Page Not Found | Raymond Euginio Kent Sanjaya" />
+    <meta name="description" content="The page you are looking for could not be found." />
+    <meta name="author" content="Raymond Euginio Kent Sanjaya" />
+    <title>Page Not Found | Raymond Euginio Kent Sanjaya</title>
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              base: '#f9f9f9',
+              accent: '#fe7c25',
+              dark: '#1e1e1e',
+              muted: '#6b7280',
+              card: '#f1f1f1'
+            },
+            fontFamily: {
+              poppins: ['Poppins', 'Inter', 'sans-serif'],
+              inter: ['Inter', 'Poppins', 'sans-serif']
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="flex min-h-screen flex-col items-center justify-center bg-base text-dark font-poppins">
+    <main class="mx-auto flex max-w-xl flex-col items-center gap-6 px-6 text-center">
+      <span class="text-sm font-semibold uppercase tracking-widest text-muted">404</span>
+      <h1 class="text-3xl font-semibold sm:text-4xl">Page not found — back to projects?</h1>
+      <p class="text-base text-muted">
+        The page you were looking for has moved or doesn’t exist. Explore Raymond’s work and feel free to reach out.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="/projects.html" class="inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white shadow-md transition hover:shadow-lg">
+          Return to Projects
+        </a>
+        <a href="/" class="inline-flex items-center gap-2 rounded-full border border-accent px-6 py-3 text-sm font-semibold text-accent transition hover:bg-accent hover:text-white">
+          Go Home
+        </a>
+      </div>
+    </main>
+  </body>
+</html>

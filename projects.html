@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Projects | Raymond Euginio Kent Sanjaya" />
+    <meta name="description" content="Discover highlighted software projects by Raymond Euginio Kent Sanjaya, including management systems, ordering platforms, and productivity tools." />
+    <meta name="author" content="Raymond Euginio Kent Sanjaya" />
+    <title>Projects | Raymond Euginio Kent Sanjaya</title>
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              base: '#f9f9f9',
+              accent: '#fe7c25',
+              dark: '#1e1e1e',
+              muted: '#6b7280',
+              card: '#f1f1f1'
+            },
+            fontFamily: {
+              poppins: ['Poppins', 'Inter', 'sans-serif'],
+              inter: ['Inter', 'Poppins', 'sans-serif']
+            }
+          }
+        }
+      }
+    </script>
+    <script
+      src="https://kit.fontawesome.com/5d4550a629.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
+  <body class="bg-base text-dark font-poppins">
+    <header class="border-b border-gray-200 bg-base">
+      <div class="mx-auto flex max-w-5xl items-center justify-between px-6 py-6">
+        <a href="/" class="text-lg font-semibold tracking-wide">REKS</a>
+        <nav class="flex gap-6 text-sm font-medium text-muted">
+          <a href="/" class="hover:text-accent transition-colors">Home</a>
+          <a href="/projects.html" class="text-accent">Projects</a>
+          <a href="/contact.html" class="hover:text-accent transition-colors">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="mx-auto max-w-5xl px-6 py-16">
+      <div class="mb-12 space-y-3 text-center">
+        <h1 class="text-3xl font-semibold sm:text-4xl">Projects</h1>
+        <p class="text-base text-muted">
+          A collection of hands-on builds highlighting problem solving, maintainable code, and simple experiences.
+        </p>
+      </div>
+
+      <div class="grid gap-8 md:grid-cols-2">
+        <article class="group flex flex-col rounded-2xl bg-white shadow-md transition hover:-translate-y-1 hover:shadow-lg">
+          <img src="/assets/screenshots/regina-1.png" alt="Regina Salon Screenshot" class="h-56 w-full rounded-t-2xl object-cover" />
+          <div class="flex flex-1 flex-col gap-4 p-6">
+            <div>
+              <h2 class="text-xl font-semibold">Regina Salon Management System</h2>
+              <p class="mt-2 text-sm text-muted">
+                A tailored platform streamlining appointment scheduling, inventory tracking, and stylist assignments.
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-2 text-xs font-medium text-muted">
+              <span class="rounded-full bg-card px-3 py-1">Laravel</span>
+              <span class="rounded-full bg-card px-3 py-1">MySQL</span>
+              <span class="rounded-full bg-card px-3 py-1">TailwindCSS</span>
+            </div>
+            <div class="mt-auto flex items-center justify-between pt-4">
+              <a href="/projects/regina-salon.html" class="inline-flex items-center gap-2 rounded-full bg-accent px-5 py-2 text-sm font-semibold text-white transition hover:shadow-lg">
+                View Details
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="https://github.com/raymondeuginio" class="text-xs text-muted transition hover:text-accent" title="View on GitHub">
+                View on GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="group flex flex-col rounded-2xl bg-white shadow-md transition hover:-translate-y-1 hover:shadow-lg">
+          <img src="/assets/screenshots/ollies-1.png" alt="Ollie's Café Screenshot" class="h-56 w-full rounded-t-2xl object-cover" />
+          <div class="flex flex-1 flex-col gap-4 p-6">
+            <div>
+              <h2 class="text-xl font-semibold">Ollie’s Café QR Self-Order System</h2>
+              <p class="mt-2 text-sm text-muted">
+                A QR-powered ordering flow that reduces queue times and keeps kitchen staff updated in real time.
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-2 text-xs font-medium text-muted">
+              <span class="rounded-full bg-card px-3 py-1">Laravel</span>
+              <span class="rounded-full bg-card px-3 py-1">Inertia.js</span>
+              <span class="rounded-full bg-card px-3 py-1">TailwindCSS</span>
+            </div>
+            <div class="mt-auto flex items-center justify-between pt-4">
+              <a href="/projects/ollies-cafe.html" class="inline-flex items-center gap-2 rounded-full bg-accent px-5 py-2 text-sm font-semibold text-white transition hover:shadow-lg">
+                View Details
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="https://github.com/raymondeuginio" class="text-xs text-muted transition hover:text-accent" title="View on GitHub">
+                View on GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="group flex flex-col rounded-2xl bg-white shadow-md transition hover:-translate-y-1 hover:shadow-lg">
+          <img src="/assets/screenshots/todo-1.png" alt="To-Do List Web App Screenshot" class="h-56 w-full rounded-t-2xl object-cover" />
+          <div class="flex flex-1 flex-col gap-4 p-6">
+            <div>
+              <h2 class="text-xl font-semibold">To-Do List Web App</h2>
+              <p class="mt-2 text-sm text-muted">
+                A productivity-focused planner with drag-and-drop organization and progress analytics.
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-2 text-xs font-medium text-muted">
+              <span class="rounded-full bg-card px-3 py-1">React</span>
+              <span class="rounded-full bg-card px-3 py-1">Node.js</span>
+              <span class="rounded-full bg-card px-3 py-1">MongoDB</span>
+            </div>
+            <div class="mt-auto flex items-center justify-between pt-4">
+              <a href="/projects/todo-list.html" class="inline-flex items-center gap-2 rounded-full bg-accent px-5 py-2 text-sm font-semibold text-white transition hover:shadow-lg">
+                View Details
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="https://github.com/raymondeuginio" class="text-xs text-muted transition hover:text-accent" title="View on GitHub">
+                View on GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="group flex flex-col rounded-2xl bg-white shadow-md transition hover:-translate-y-1 hover:shadow-lg">
+          <img src="/assets/screenshots/finance-1.png" alt="Personal Financial Tracker Screenshot" class="h-56 w-full rounded-t-2xl object-cover" />
+          <div class="flex flex-1 flex-col gap-4 p-6">
+            <div>
+              <h2 class="text-xl font-semibold">Personal Financial Tracker</h2>
+              <p class="mt-2 text-sm text-muted">
+                A budgeting dashboard that syncs spending insights, savings goals, and recurring reminders.
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-2 text-xs font-medium text-muted">
+              <span class="rounded-full bg-card px-3 py-1">Next.js</span>
+              <span class="rounded-full bg-card px-3 py-1">PostgreSQL</span>
+              <span class="rounded-full bg-card px-3 py-1">TailwindCSS</span>
+            </div>
+            <div class="mt-auto flex items-center justify-between pt-4">
+              <a href="/projects/finance-tracker.html" class="inline-flex items-center gap-2 rounded-full bg-accent px-5 py-2 text-sm font-semibold text-white transition hover:shadow-lg">
+                View Details
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="https://github.com/raymondeuginio" class="text-xs text-muted transition hover:text-accent" title="View on GitHub">
+                View on GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <footer class="border-t border-gray-200 bg-base">
+      <div class="mx-auto max-w-5xl px-6 py-8 text-sm text-muted">
+        © 2025 Raymond Euginio Kent Sanjaya
+      </div>
+    </footer>
+  </body>
+</html>

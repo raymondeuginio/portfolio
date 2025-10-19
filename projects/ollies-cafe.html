@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Ollie’s Café QR Self-Order System | Raymond Euginio Kent Sanjaya" />
+    <meta name="description" content="Case study of Ollie’s Café QR Self-Order System by Raymond Euginio Kent Sanjaya, highlighting goals, technology, features, and results." />
+    <meta name="author" content="Raymond Euginio Kent Sanjaya" />
+    <title>Ollie’s Café QR Self-Order System | Raymond Euginio Kent Sanjaya</title>
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              base: '#f9f9f9',
+              accent: '#fe7c25',
+              dark: '#1e1e1e',
+              muted: '#6b7280',
+              card: '#f1f1f1'
+            },
+            fontFamily: {
+              poppins: ['Poppins', 'Inter', 'sans-serif'],
+              inter: ['Inter', 'Poppins', 'sans-serif']
+            }
+          }
+        }
+      }
+    </script>
+    <script
+      src="https://kit.fontawesome.com/5d4550a629.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
+  <body class="bg-base text-dark font-poppins">
+    <header class="border-b border-gray-200 bg-base">
+      <div class="mx-auto flex max-w-5xl items-center justify-between px-6 py-6">
+        <a href="/" class="text-lg font-semibold tracking-wide">REKS</a>
+        <nav class="flex gap-6 text-sm font-medium text-muted">
+          <a href="/" class="hover:text-accent transition-colors">Home</a>
+          <a href="/projects.html" class="hover:text-accent transition-colors">Projects</a>
+          <a href="/contact.html" class="hover:text-accent transition-colors">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="mx-auto max-w-5xl px-6 py-16">
+      <header class="space-y-3">
+        <h1 class="text-3xl font-semibold sm:text-4xl">Ollie’s Café QR Self-Order System</h1>
+        <p class="text-base text-muted">Laravel | Inertia.js | TailwindCSS | MySQL</p>
+      </header>
+
+      <section class="mt-8 space-y-4 text-base leading-relaxed text-dark/80">
+        <h2 class="text-lg font-semibold">Overview</h2>
+        <p>
+          Ollie’s Café sought to modernize their ordering experience. I introduced a QR-based ordering system allowing guests to browse the menu, customize items, and pay from their phones. The kitchen receives prioritized tickets while the cashier monitors payments in a single dashboard.
+        </p>
+      </section>
+
+      <section class="mt-8">
+        <h2 class="text-lg font-semibold">Tech Stack</h2>
+        <div class="mt-4 flex flex-wrap gap-2 text-xs font-medium text-muted">
+          <span class="rounded-full bg-card px-3 py-1">Laravel</span>
+          <span class="rounded-full bg-card px-3 py-1">Inertia.js</span>
+          <span class="rounded-full bg-card px-3 py-1">Vue 3</span>
+          <span class="rounded-full bg-card px-3 py-1">TailwindCSS</span>
+          <span class="rounded-full bg-card px-3 py-1">MySQL</span>
+        </div>
+      </section>
+
+      <section class="mt-8">
+        <h2 class="text-lg font-semibold">Features</h2>
+        <ul class="mt-4 space-y-3 text-base text-dark/80">
+          <li class="flex items-start gap-3">
+            <span class="mt-1 h-2 w-2 rounded-full bg-accent"></span>
+            <span>QR code table pairing with secure session handling.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 h-2 w-2 rounded-full bg-accent"></span>
+            <span>Real-time order status updates for both baristas and guests.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 h-2 w-2 rounded-full bg-accent"></span>
+            <span>Menu CMS for seasonal drinks with photo and pricing controls.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 h-2 w-2 rounded-full bg-accent"></span>
+            <span>Sales analytics dashboard for daily and weekly performance.</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="mt-8">
+        <h2 class="text-lg font-semibold">Screenshots</h2>
+        <div class="mt-4 grid gap-4 sm:grid-cols-2">
+          <img src="/assets/screenshots/ollies-1.png" alt="Ollie's Café menu" class="rounded-lg shadow-md" />
+          <img src="/assets/screenshots/ollies-2.png" alt="Ollie's Café dashboard" class="rounded-lg shadow-md" />
+        </div>
+      </section>
+
+      <section class="mt-8 space-y-4 text-base leading-relaxed text-dark/80">
+        <h2 class="text-lg font-semibold">Outcome</h2>
+        <p>
+          The café processed 35% more orders during peak hours without adding new staff. I gained experience optimizing Laravel queues for payment webhooks and deploying SSR-driven frontends with Inertia.
+        </p>
+      </section>
+
+      <div class="mt-12">
+        <a href="/projects.html" class="inline-flex items-center gap-2 rounded-full border border-accent px-5 py-2 text-sm font-semibold text-accent transition hover:bg-accent hover:text-white">
+          <i class="fa-solid fa-arrow-left"></i>
+          Back to Projects
+        </a>
+      </div>
+    </main>
+
+    <footer class="border-t border-gray-200 bg-base">
+      <div class="mx-auto max-w-5xl px-6 py-8 text-sm text-muted">
+        © 2025 Raymond Euginio Kent Sanjaya
+      </div>
+    </footer>
+  </body>
+</html>

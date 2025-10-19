@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Raymond Euginio Kent Sanjaya | Portfolio" />
+    <meta name="description" content="Personal portfolio of Raymond Euginio Kent Sanjaya, an aspiring software developer focused on backend, fullstack, and QA projects." />
+    <meta name="author" content="Raymond Euginio Kent Sanjaya" />
+    <title>Raymond Euginio Kent Sanjaya | Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              base: '#f9f9f9',
+              accent: '#fe7c25',
+              dark: '#1e1e1e',
+              muted: '#6b7280',
+              card: '#f1f1f1'
+            },
+            fontFamily: {
+              poppins: ['Poppins', 'Inter', 'sans-serif'],
+              inter: ['Inter', 'Poppins', 'sans-serif']
+            }
+          }
+        }
+      }
+    </script>
+    <script
+      src="https://kit.fontawesome.com/5d4550a629.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
+  <body class="bg-base text-dark font-poppins">
+    <header class="border-b border-gray-200 bg-base">
+      <div class="mx-auto flex max-w-5xl items-center justify-between px-6 py-6">
+        <a href="/" class="text-lg font-semibold tracking-wide">REKS</a>
+        <nav class="flex gap-6 text-sm font-medium text-muted">
+          <a href="/" class="hover:text-accent transition-colors">Home</a>
+          <a href="/projects.html" class="hover:text-accent transition-colors">Projects</a>
+          <a href="/contact.html" class="hover:text-accent transition-colors">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="mx-auto max-w-5xl px-6 py-16">
+        <div class="space-y-6">
+          <span class="inline-flex items-center gap-2 rounded-full bg-card px-4 py-2 text-xs font-medium uppercase tracking-wider text-muted">
+            <span class="inline-block h-2 w-2 rounded-full bg-accent"></span>
+            Based in Jakarta, Indonesia
+          </span>
+          <h1 class="text-4xl font-semibold leading-tight sm:text-5xl">
+            Raymond Euginio Kent Sanjaya
+          </h1>
+          <p class="text-lg font-medium text-muted">
+            Aspiring Software Developer | Backend • Fullstack • QA Enthusiast
+          </p>
+          <p class="max-w-2xl text-base text-muted">
+            An Information Technology student at Tarumanagara University passionate about building real-world applications with clean code and simple design.
+          </p>
+          <div class="flex flex-wrap items-center gap-4">
+            <a
+              href="/assets/Raymond-Euginio-Kent-Sanjaya-CV.pdf"
+              class="inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white shadow-md transition hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+            >
+              <span>Download CV</span>
+              <i class="fa-solid fa-arrow-down"></i>
+            </a>
+            <div class="flex items-center gap-3 text-xl text-muted">
+              <a href="https://github.com/raymondeuginio" class="transition hover:text-accent" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/raymondeuginio" class="transition hover:text-accent" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="mailto:raymond.535230044@stu.untar.ac.id" class="transition hover:text-accent" aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+          <div class="text-xs text-muted">
+            <a href="https://github.com/raymondeuginio" class="relative inline-flex items-center gap-2 text-muted transition hover:text-accent" title="View on GitHub">
+              <i class="fa-solid fa-code"></i>
+              <span>View on GitHub</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-white">
+        <div class="mx-auto grid max-w-5xl gap-6 px-6 py-16 md:grid-cols-3">
+          <div class="rounded-2xl bg-card p-6 shadow-md transition hover:shadow-lg">
+            <p class="text-sm font-semibold uppercase text-muted">Focus Areas</p>
+            <ul class="mt-4 space-y-2 text-sm text-dark/80">
+              <li>Backend API Design</li>
+              <li>Fullstack Web Applications</li>
+              <li>Quality Assurance & Testing</li>
+            </ul>
+          </div>
+          <div class="rounded-2xl bg-card p-6 shadow-md transition hover:shadow-lg">
+            <p class="text-sm font-semibold uppercase text-muted">Toolbox</p>
+            <ul class="mt-4 flex flex-wrap gap-2 text-xs font-medium text-muted">
+              <li class="rounded-full bg-white px-3 py-1 shadow">Laravel</li>
+              <li class="rounded-full bg-white px-3 py-1 shadow">TailwindCSS</li>
+              <li class="rounded-full bg-white px-3 py-1 shadow">MySQL</li>
+              <li class="rounded-full bg-white px-3 py-1 shadow">Docker</li>
+              <li class="rounded-full bg-white px-3 py-1 shadow">Jest</li>
+              <li class="rounded-full bg-white px-3 py-1 shadow">Cypress</li>
+            </ul>
+          </div>
+          <div class="rounded-2xl bg-card p-6 shadow-md transition hover:shadow-lg">
+            <p class="text-sm font-semibold uppercase text-muted">Currently</p>
+            <p class="mt-4 text-sm text-dark/80">
+              Refining backend architecture patterns while delivering seamless user experiences for campus and freelance projects.
+            </p>
+            <a href="/projects.html" class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-accent">
+              Explore Projects
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-gray-200 bg-base">
+      <div class="mx-auto max-w-5xl px-6 py-8 text-sm text-muted">
+        © 2025 Raymond Euginio Kent Sanjaya
+      </div>
+    </footer>
+  </body>
+</html>

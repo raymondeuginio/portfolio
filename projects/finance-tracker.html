@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Personal Financial Tracker | Raymond Euginio Kent Sanjaya" />
+    <meta name="description" content="Case study of the Personal Financial Tracker by Raymond Euginio Kent Sanjaya, featuring budgeting insights, savings goals, and reminders." />
+    <meta name="author" content="Raymond Euginio Kent Sanjaya" />
+    <title>Personal Financial Tracker | Raymond Euginio Kent Sanjaya</title>
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              base: '#f9f9f9',
+              accent: '#fe7c25',
+              dark: '#1e1e1e',
+              muted: '#6b7280',
+              card: '#f1f1f1'
+            },
+            fontFamily: {
+              poppins: ['Poppins', 'Inter', 'sans-serif'],
+              inter: ['Inter', 'Poppins', 'sans-serif']
+            }
+          }
+        }
+      }
+    </script>
+    <script
+      src="https://kit.fontawesome.com/5d4550a629.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
+  <body class="bg-base text-dark font-poppins">
+    <header class="border-b border-gray-200 bg-base">
+      <div class="mx-auto flex max-w-5xl items-center justify-between px-6 py-6">
+        <a href="/" class="text-lg font-semibold tracking-wide">REKS</a>
+        <nav class="flex gap-6 text-sm font-medium text-muted">
+          <a href="/" class="hover:text-accent transition-colors">Home</a>
+          <a href="/projects.html" class="hover:text-accent transition-colors">Projects</a>
+          <a href="/contact.html" class="hover:text-accent transition-colors">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="mx-auto max-w-5xl px-6 py-16">
+      <header class="space-y-3">
+        <h1 class="text-3xl font-semibold sm:text-4xl">Personal Financial Tracker</h1>
+        <p class="text-base text-muted">Next.js | PostgreSQL | TailwindCSS | Chart.js</p>
+      </header>
+
+      <section class="mt-8 space-y-4 text-base leading-relaxed text-dark/80">
+        <h2 class="text-lg font-semibold">Overview</h2>
+        <p>
+          This tracker helps young professionals manage expenses, monitor investments, and set savings targets. I built automated imports from bank statements and crafted a simple UI that surfaces insights without overwhelming graphs.
+        </p>
+      </section>
+
+      <section class="mt-8">
+        <h2 class="text-lg font-semibold">Tech Stack</h2>
+        <div class="mt-4 flex flex-wrap gap-2 text-xs font-medium text-muted">
+          <span class="rounded-full bg-card px-3 py-1">Next.js</span>
+          <span class="rounded-full bg-card px-3 py-1">TypeScript</span>
+          <span class="rounded-full bg-card px-3 py-1">PostgreSQL</span>
+          <span class="rounded-full bg-card px-3 py-1">Prisma</span>
+          <span class="rounded-full bg-card px-3 py-1">TailwindCSS</span>
+          <span class="rounded-full bg-card px-3 py-1">Chart.js</span>
+        </div>
+      </section>
+
+      <section class="mt-8">
+        <h2 class="text-lg font-semibold">Features</h2>
+        <ul class="mt-4 space-y-3 text-base text-dark/80">
+          <li class="flex items-start gap-3">
+            <span class="mt-1 h-2 w-2 rounded-full bg-accent"></span>
+            <span>Bank CSV importer with category suggestions powered by rules engine.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 h-2 w-2 rounded-full bg-accent"></span>
+            <span>Interactive charts for cash flow, savings progress, and debt payoff.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 h-2 w-2 rounded-full bg-accent"></span>
+            <span>Budget alerts delivered through email digests.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 h-2 w-2 rounded-full bg-accent"></span>
+            <span>Goal timeline that visualizes milestones and celebrates wins.</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="mt-8">
+        <h2 class="text-lg font-semibold">Screenshots</h2>
+        <div class="mt-4 grid gap-4 sm:grid-cols-2">
+          <img src="/assets/screenshots/finance-1.png" alt="Financial tracker dashboard" class="rounded-lg shadow-md" />
+          <img src="/assets/screenshots/finance-2.png" alt="Financial tracker goals" class="rounded-lg shadow-md" />
+        </div>
+      </section>
+
+      <section class="mt-8 space-y-4 text-base leading-relaxed text-dark/80">
+        <h2 class="text-lg font-semibold">Outcome</h2>
+        <p>
+          Freelance clients reported clearer budgeting decisions within the first month. Building the tracker deepened my TypeScript discipline and experience with server-side rendering patterns in Next.js.
+        </p>
+      </section>
+
+      <div class="mt-12">
+        <a href="/projects.html" class="inline-flex items-center gap-2 rounded-full border border-accent px-5 py-2 text-sm font-semibold text-accent transition hover:bg-accent hover:text-white">
+          <i class="fa-solid fa-arrow-left"></i>
+          Back to Projects
+        </a>
+      </div>
+    </main>
+
+    <footer class="border-t border-gray-200 bg-base">
+      <div class="mx-auto max-w-5xl px-6 py-8 text-sm text-muted">
+        © 2025 Raymond Euginio Kent Sanjaya
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Contact | Raymond Euginio Kent Sanjaya" />
+    <meta name="description" content="Connect with Raymond Euginio Kent Sanjaya for collaborations, internships, or freelance opportunities." />
+    <meta name="author" content="Raymond Euginio Kent Sanjaya" />
+    <title>Contact | Raymond Euginio Kent Sanjaya</title>
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              base: '#f9f9f9',
+              accent: '#fe7c25',
+              dark: '#1e1e1e',
+              muted: '#6b7280',
+              card: '#f1f1f1'
+            },
+            fontFamily: {
+              poppins: ['Poppins', 'Inter', 'sans-serif'],
+              inter: ['Inter', 'Poppins', 'sans-serif']
+            }
+          }
+        }
+      }
+    </script>
+    <script
+      src="https://kit.fontawesome.com/5d4550a629.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
+  <body class="bg-base text-dark font-poppins">
+    <header class="border-b border-gray-200 bg-base">
+      <div class="mx-auto flex max-w-5xl items-center justify-between px-6 py-6">
+        <a href="/" class="text-lg font-semibold tracking-wide">REKS</a>
+        <nav class="flex gap-6 text-sm font-medium text-muted">
+          <a href="/" class="hover:text-accent transition-colors">Home</a>
+          <a href="/projects.html" class="hover:text-accent transition-colors">Projects</a>
+          <a href="/contact.html" class="text-accent">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="mx-auto max-w-5xl px-6 py-16">
+      <div class="mx-auto max-w-3xl space-y-6 text-center">
+        <h1 class="text-3xl font-semibold sm:text-4xl">Let’s collaborate or connect!</h1>
+        <p class="text-base text-muted">
+          I’m always open to discussing new ideas, collaborations, or opportunities to learn. Reach out through any of the channels below or send a message directly.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="https://github.com/raymondeuginio" class="inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-semibold text-dark shadow-md transition hover:-translate-y-0.5 hover:shadow-lg">
+            <i class="fa-brands fa-github text-xl text-accent"></i>
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/raymondeuginio" class="inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-semibold text-dark shadow-md transition hover:-translate-y-0.5 hover:shadow-lg">
+            <i class="fa-brands fa-linkedin text-xl text-accent"></i>
+            LinkedIn
+          </a>
+          <a href="mailto:raymond.535230044@stu.untar.ac.id" class="inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-semibold text-dark shadow-md transition hover:-translate-y-0.5 hover:shadow-lg">
+            <i class="fa-solid fa-envelope text-xl text-accent"></i>
+            Email
+          </a>
+        </div>
+      </div>
+
+      <form action="https://formspree.io/f/mkgnkngy" method="POST" class="mx-auto mt-12 max-w-3xl space-y-6 rounded-2xl bg-white p-8 shadow-md">
+        <div class="grid gap-6 md:grid-cols-2">
+          <label class="flex flex-col text-left text-sm font-medium text-muted">
+            Name
+            <input type="text" name="name" required class="mt-2 rounded-xl border border-gray-200 bg-base px-4 py-3 text-sm text-dark focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/40" placeholder="Your name" />
+          </label>
+          <label class="flex flex-col text-left text-sm font-medium text-muted">
+            Email
+            <input type="email" name="email" required class="mt-2 rounded-xl border border-gray-200 bg-base px-4 py-3 text-sm text-dark focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/40" placeholder="you@example.com" />
+          </label>
+        </div>
+        <label class="flex flex-col text-left text-sm font-medium text-muted">
+          Message
+          <textarea name="message" rows="5" required class="mt-2 rounded-xl border border-gray-200 bg-base px-4 py-3 text-sm text-dark focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/40" placeholder="How can we work together?"></textarea>
+        </label>
+        <button type="submit" class="inline-flex w-full items-center justify-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white transition hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent">
+          Send Message
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </form>
+    </main>
+
+    <footer class="border-t border-gray-200 bg-base">
+      <div class="mx-auto max-w-5xl px-6 py-8 text-sm text-muted">
+        © 2025 Raymond Euginio Kent Sanjaya
+      </div>
+    </footer>
+  </body>
+</html>
