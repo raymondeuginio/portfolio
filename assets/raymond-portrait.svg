@@ -1,0 +1,40 @@
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fee4cb" />
+      <stop offset="50%" stop-color="#f5a3c7" />
+      <stop offset="100%" stop-color="#7dd3fc" />
+    </linearGradient>
+    <linearGradient id="shirtGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e3a8a" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+    <linearGradient id="shadowGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0.16" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" rx="48" fill="url(#bgGradient)" />
+  <ellipse cx="200" cy="320" rx="120" ry="60" fill="url(#shadowGradient)" />
+  <circle cx="200" cy="180" r="110" fill="#fdeef4" />
+  <path
+    d="M127 280C151 246 249 246 273 280C263 316 234 344 200 344C166 344 137 316 127 280Z"
+    fill="url(#shirtGradient)"
+  />
+  <path
+    d="M240 190C240 224 220 252 200 252C180 252 160 224 160 190C160 156 178 128 200 128C222 128 240 156 240 190Z"
+    fill="#f3d1c8"
+  />
+  <path
+    d="M200 120C220 120 242 134 246 176C249 208 242 226 242 226C242 226 240 210 236 198C232 186 210 176 200 176C190 176 168 186 164 198C160 210 158 226 158 226C158 226 151 208 154 176C158 134 180 120 200 120Z"
+    fill="#2f2a5a"
+  />
+  <g transform="translate(200 180)">
+    <path d="M-36 18C-28 26 -20 26 -12 18" stroke="#2f2a5a" stroke-width="6" stroke-linecap="round" />
+    <path d="M12 18C20 26 28 26 36 18" stroke="#2f2a5a" stroke-width="6" stroke-linecap="round" />
+    <path d="M-18 50C-6 64 6 64 18 50" stroke="#f97316" stroke-width="6" stroke-linecap="round" />
+  </g>
+  <text x="200" y="378" text-anchor="middle" font-family="'Poppins', 'Inter', sans-serif" font-size="36" fill="#ffffff">
+    REKS
+  </text>
+</svg>

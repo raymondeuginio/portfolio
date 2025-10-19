@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="title" content="Raymond Euginio Kent Sanjaya | Portfolio" />
-    <meta name="description" content="Personal portfolio of Raymond Euginio Kent Sanjaya, an aspiring software developer focused on backend, fullstack, and QA projects." />
+    <meta
+      name="description"
+      content="Personal portfolio of Raymond Euginio Kent Sanjaya, an aspiring software developer focused on backend, fullstack, and QA projects."
+    />
     <meta name="author" content="Raymond Euginio Kent Sanjaya" />
     <title>Raymond Euginio Kent Sanjaya | Portfolio</title>
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
@@ -24,59 +27,122 @@
               accent: '#fe7c25',
               dark: '#1e1e1e',
               muted: '#6b7280',
-              card: '#f1f1f1'
+              card: '#f1f1f1',
+              soft: '#fef7f0'
             },
             fontFamily: {
               poppins: ['Poppins', 'Inter', 'sans-serif'],
               inter: ['Inter', 'Poppins', 'sans-serif']
+            },
+            boxShadow: {
+              glow: '0 20px 40px -28px rgba(254, 124, 37, 0.6)'
             }
           }
         }
       }
     </script>
-    <script
-      src="https://kit.fontawesome.com/5d4550a629.js"
-      crossorigin="anonymous"
-      defer
-    ></script>
+    <style>
+      @keyframes fadeSlideUp {
+        0% {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-8px);
+        }
+      }
+      @keyframes pulseSoft {
+        0%,
+        100% {
+          opacity: 0.4;
+          transform: scale(1);
+        }
+        50% {
+          opacity: 0.6;
+          transform: scale(1.05);
+        }
+      }
+      .animate-fade-slide {
+        animation: fadeSlideUp 0.9s ease forwards;
+      }
+      .animate-float-delayed {
+        animation: float 4s ease-in-out infinite;
+        animation-delay: 1s;
+      }
+      .animate-pulse-soft {
+        animation: pulseSoft 5s ease-in-out infinite;
+      }
+      .backdrop-sheen::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: 28px;
+        background: linear-gradient(145deg, rgba(254, 124, 37, 0.08), rgba(59, 130, 246, 0.08));
+        z-index: -1;
+      }
+    </style>
+    <script src="https://kit.fontawesome.com/5d4550a629.js" crossorigin="anonymous" defer></script>
   </head>
   <body class="bg-base text-dark font-poppins">
-    <header class="border-b border-gray-200 bg-base">
-      <div class="mx-auto flex max-w-5xl items-center justify-between px-6 py-6">
+    <header class="border-b border-gray-200 bg-white/80 backdrop-blur">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
         <a href="/" class="text-lg font-semibold tracking-wide">REKS</a>
         <nav class="flex gap-6 text-sm font-medium text-muted">
-          <a href="/" class="hover:text-accent transition-colors">Home</a>
-          <a href="/projects.html" class="hover:text-accent transition-colors">Projects</a>
-          <a href="/contact.html" class="hover:text-accent transition-colors">Contact</a>
+          <a href="/" class="transition-colors hover:text-accent">Home</a>
+          <a href="/projects.html" class="transition-colors hover:text-accent">Projects</a>
+          <a href="/contact.html" class="transition-colors hover:text-accent">Contact</a>
         </nav>
       </div>
     </header>
 
     <main>
-      <section class="mx-auto max-w-5xl px-6 py-16">
-        <div class="space-y-6">
-          <span class="inline-flex items-center gap-2 rounded-full bg-card px-4 py-2 text-xs font-medium uppercase tracking-wider text-muted">
-            <span class="inline-block h-2 w-2 rounded-full bg-accent"></span>
-            Based in Jakarta, Indonesia
-          </span>
-          <h1 class="text-4xl font-semibold leading-tight sm:text-5xl">
-            Raymond Euginio Kent Sanjaya
-          </h1>
-          <p class="text-lg font-medium text-muted">
-            Aspiring Software Developer | Backend • Fullstack • QA Enthusiast
-          </p>
-          <p class="max-w-2xl text-base text-muted">
-            An Information Technology student at Tarumanagara University passionate about building real-world applications with clean code and simple design.
-          </p>
-          <div class="flex flex-wrap items-center gap-4">
-            <a
-              href="/assets/Raymond-Euginio-Kent-Sanjaya-CV.pdf"
-              class="inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white shadow-md transition hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
-            >
-              <span>Download CV</span>
-              <i class="fa-solid fa-arrow-down"></i>
-            </a>
-            <div class="flex items-center gap-3 text-xl text-muted">
+      <section class="relative overflow-hidden bg-white py-16">
+        <div class="absolute -left-20 top-10 h-48 w-48 rounded-full bg-gradient-to-br from-accent/10 via-orange-200/40 to-blue-200/40 blur-3xl animate-pulse-soft"></div>
+        <div class="absolute -right-12 bottom-16 h-52 w-52 rounded-full bg-gradient-to-br from-blue-200/50 via-sky-200/40 to-purple-200/50 blur-3xl animate-pulse-soft"></div>
+        <div class="relative mx-auto grid max-w-6xl items-center gap-12 px-6 md:grid-cols-[1.1fr_1fr]">
+          <div class="space-y-8 animate-fade-slide">
+            <span class="inline-flex items-center gap-2 rounded-full bg-soft px-4 py-2 text-xs font-medium uppercase tracking-wide text-muted">
+              <span class="inline-block h-2 w-2 animate-ping rounded-full bg-accent"></span>
+              Information Technology Student · Jakarta 🇮🇩
+            </span>
+            <div class="space-y-4">
+              <p class="text-sm font-semibold uppercase text-accent">Hi there! 👋</p>
+              <h1 class="text-4xl font-semibold leading-tight sm:text-5xl">
+                Raymond Euginio Kent Sanjaya
+              </h1>
+              <p class="text-lg font-medium text-muted">
+                Backend &amp; Fullstack Developer in the making · QA Enthusiast · Lifelong Learner
+              </p>
+            </div>
+            <p class="max-w-2xl text-base text-muted">
+              I build delightful digital experiences with a focus on clean architecture, reliable testing, and thoughtful user journeys. Currently exploring modern web stacks while shipping projects that solve real problems.
+            </p>
+            <div class="flex flex-wrap items-center gap-4">
+              <a
+                href="/assets/Raymond-Euginio-Kent-Sanjaya-CV.pdf"
+                class="inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white shadow-glow transition hover:-translate-y-0.5 hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+              >
+                <span>Download CV</span>
+                <i class="fa-solid fa-arrow-down"></i>
+              </a>
+              <a
+                href="/projects.html"
+                class="inline-flex items-center gap-2 rounded-full border border-accent/30 bg-white px-6 py-3 text-sm font-semibold text-accent transition hover:-translate-y-0.5 hover:border-accent hover:bg-accent/10"
+              >
+                View Projects 🚀
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xl text-muted">
               <a href="https://github.com/raymondeuginio" class="transition hover:text-accent" aria-label="GitHub">
                 <i class="fa-brands fa-github"></i>
               </a>
@@ -87,38 +153,81 @@
                 <i class="fa-solid fa-envelope"></i>
               </a>
             </div>
+            <div class="grid gap-4 sm:grid-cols-2">
+              <div class="relative overflow-hidden rounded-2xl border border-white/80 bg-white/80 p-4 shadow-sm backdrop-sheen">
+                <p class="flex items-center gap-2 text-sm font-semibold text-dark">
+                  <span class="text-2xl">🧠</span>
+                  Core Strengths
+                </p>
+                <ul class="mt-3 space-y-1 text-sm text-muted">
+                  <li>API Architecture &amp; Integration</li>
+                  <li>Automated Testing Strategies</li>
+                  <li>Thoughtful UI Implementation</li>
+                </ul>
+              </div>
+              <div class="relative overflow-hidden rounded-2xl border border-white/80 bg-white/80 p-4 shadow-sm backdrop-sheen">
+                <p class="flex items-center gap-2 text-sm font-semibold text-dark">
+                  <span class="text-2xl">✨</span>
+                  Currently Learning
+                </p>
+                <ul class="mt-3 space-y-1 text-sm text-muted">
+                  <li>Scalable backend patterns</li>
+                  <li>Next.js &amp; modern tooling</li>
+                  <li>Product discovery methods</li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="text-xs text-muted">
-            <a href="https://github.com/raymondeuginio" class="relative inline-flex items-center gap-2 text-muted transition hover:text-accent" title="View on GitHub">
-              <i class="fa-solid fa-code"></i>
-              <span>View on GitHub</span>
-            </a>
+          <div class="relative flex items-center justify-center">
+            <div class="absolute -top-12 left-10 h-24 w-24 rounded-full bg-gradient-to-br from-accent/20 to-orange-200/40 blur-2xl animate-pulse-soft"></div>
+            <div class="absolute -bottom-10 right-6 h-28 w-28 rounded-full bg-gradient-to-br from-blue-200/40 to-purple-200/50 blur-2xl animate-pulse-soft"></div>
+            <figure class="relative w-full max-w-sm rounded-[32px] border border-white/60 bg-white/80 p-6 shadow-xl backdrop-blur">
+              <div class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-orange-100 via-white to-sky-100 p-2 shadow-inner">
+                <img
+                  src="/assets/raymond-portrait.svg"
+                  alt="Portrait of Raymond Euginio Kent Sanjaya"
+                  class="h-full w-full rounded-2xl object-cover"
+                />
+              </div>
+              <div class="absolute -left-10 top-12 hidden w-36 rounded-2xl border border-white/80 bg-white/90 p-4 text-sm shadow-lg backdrop-blur md:flex animate-float-delayed">
+                <div>
+                  <p class="font-semibold text-dark">Team Player 🤝</p>
+                  <p class="text-xs text-muted">I love collaborating and mentoring peers.</p>
+                </div>
+              </div>
+              <div class="absolute -right-8 bottom-10 hidden w-32 rounded-2xl border border-white/80 bg-white/90 p-3 text-sm shadow-lg backdrop-blur md:flex animate-float-delayed">
+                <div>
+                  <p class="font-semibold text-dark">Code Craft 🛠️</p>
+                  <p class="text-xs text-muted">Focused on maintainable solutions.</p>
+                </div>
+              </div>
+            </figure>
           </div>
         </div>
       </section>
 
-      <section class="bg-white">
-        <div class="mx-auto grid max-w-5xl gap-6 px-6 py-16 md:grid-cols-3">
-          <div class="rounded-2xl bg-card p-6 shadow-md transition hover:shadow-lg">
+      <section class="bg-base/60">
+        <div class="mx-auto grid max-w-6xl gap-6 px-6 py-16 md:grid-cols-3">
+          <div class="rounded-2xl bg-white p-6 shadow-md transition hover:-translate-y-1 hover:shadow-lg">
             <p class="text-sm font-semibold uppercase text-muted">Focus Areas</p>
             <ul class="mt-4 space-y-2 text-sm text-dark/80">
               <li>Backend API Design</li>
               <li>Fullstack Web Applications</li>
-              <li>Quality Assurance & Testing</li>
+              <li>Quality Assurance &amp; Testing</li>
             </ul>
           </div>
-          <div class="rounded-2xl bg-card p-6 shadow-md transition hover:shadow-lg">
+          <div class="rounded-2xl bg-white p-6 shadow-md transition hover:-translate-y-1 hover:shadow-lg">
             <p class="text-sm font-semibold uppercase text-muted">Toolbox</p>
             <ul class="mt-4 flex flex-wrap gap-2 text-xs font-medium text-muted">
-              <li class="rounded-full bg-white px-3 py-1 shadow">Laravel</li>
-              <li class="rounded-full bg-white px-3 py-1 shadow">TailwindCSS</li>
-              <li class="rounded-full bg-white px-3 py-1 shadow">MySQL</li>
-              <li class="rounded-full bg-white px-3 py-1 shadow">Docker</li>
-              <li class="rounded-full bg-white px-3 py-1 shadow">Jest</li>
-              <li class="rounded-full bg-white px-3 py-1 shadow">Cypress</li>
+              <li class="rounded-full bg-soft px-3 py-1 shadow-sm">Laravel</li>
+              <li class="rounded-full bg-soft px-3 py-1 shadow-sm">TailwindCSS</li>
+              <li class="rounded-full bg-soft px-3 py-1 shadow-sm">MySQL</li>
+              <li class="rounded-full bg-soft px-3 py-1 shadow-sm">Docker</li>
+              <li class="rounded-full bg-soft px-3 py-1 shadow-sm">Jest</li>
+              <li class="rounded-full bg-soft px-3 py-1 shadow-sm">Cypress</li>
             </ul>
           </div>
-          <div class="rounded-2xl bg-card p-6 shadow-md transition hover:shadow-lg">
+          <div class="rounded-2xl bg-white p-6 shadow-md transition hover:-translate-y-1 hover:shadow-lg">
             <p class="text-sm font-semibold uppercase text-muted">Currently</p>
             <p class="mt-4 text-sm text-dark/80">
               Refining backend architecture patterns while delivering seamless user experiences for campus and freelance projects.
@@ -132,8 +241,8 @@
       </section>
     </main>
 
-    <footer class="border-t border-gray-200 bg-base">
-      <div class="mx-auto max-w-5xl px-6 py-8 text-sm text-muted">
+    <footer class="border-t border-gray-200 bg-white/90">
+      <div class="mx-auto max-w-6xl px-6 py-8 text-sm text-muted">
         © 2025 Raymond Euginio Kent Sanjaya
       </div>
     </footer>
