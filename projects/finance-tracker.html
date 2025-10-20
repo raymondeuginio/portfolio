@@ -3,10 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="title" content="Personal Financial Tracker | Raymond Euginio Kent Sanjaya" />
-    <meta name="description" content="Case study of the Personal Financial Tracker by Raymond Euginio Kent Sanjaya, featuring budgeting insights, savings goals, and reminders." />
+    <meta name="title" content="Raymond's Financial Planner | Raymond Euginio Kent Sanjaya" />
+    <meta
+      name="description"
+      content="Raymond's Financial Planner is a Laravel 12 + Vite platform for managing income, expenses, budgets, wallets, and reports in one responsive dashboard."
+    />
     <meta name="author" content="Raymond Euginio Kent Sanjaya" />
-    <title>Personal Financial Tracker | Raymond Euginio Kent Sanjaya</title>
+    <title>Raymond's Financial Planner | Raymond Euginio Kent Sanjaya</title>
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -54,25 +57,25 @@
 
     <main class="mx-auto max-w-5xl px-6 py-16">
       <header class="space-y-3">
-        <h1 class="text-3xl font-semibold sm:text-4xl">Personal Financial Tracker</h1>
-        <p class="text-base text-muted">Next.js | PostgreSQL | TailwindCSS | Chart.js</p>
+        <h1 class="text-3xl font-semibold sm:text-4xl">Raymond's Financial Planner</h1>
+        <p class="text-base text-muted">Laravel 12 | PHP 8.2 | Vite | Tailwind CSS 4 | MySQL | Chart.js</p>
       </header>
 
       <section class="mt-8 space-y-4 text-base leading-relaxed text-dark/80">
         <h2 class="text-lg font-semibold">Overview</h2>
         <p>
-          This tracker helps young professionals manage expenses, monitor investments, and set savings targets. I built automated imports from bank statements and crafted a simple UI that surfaces insights without overwhelming graphs.
+          A Laravel 12 + Vite web application that helps users track <strong>income, expenses, budgets, and wallets</strong> — all in one elegant dashboard. Designed with Tailwind CSS 4 for a clean, modern, and responsive user experience, the planner keeps financial data accessible without sacrificing clarity.
         </p>
       </section>
 
       <section class="mt-8">
         <h2 class="text-lg font-semibold">Tech Stack</h2>
         <div class="mt-4 flex flex-wrap gap-2 text-xs font-medium text-muted">
-          <span class="rounded-full bg-card px-3 py-1">Next.js</span>
-          <span class="rounded-full bg-card px-3 py-1">TypeScript</span>
-          <span class="rounded-full bg-card px-3 py-1">PostgreSQL</span>
-          <span class="rounded-full bg-card px-3 py-1">Prisma</span>
-          <span class="rounded-full bg-card px-3 py-1">TailwindCSS</span>
+          <span class="rounded-full bg-card px-3 py-1">Laravel 12</span>
+          <span class="rounded-full bg-card px-3 py-1">PHP ^8.2</span>
+          <span class="rounded-full bg-card px-3 py-1">Vite</span>
+          <span class="rounded-full bg-card px-3 py-1">Tailwind CSS 4</span>
+          <span class="rounded-full bg-card px-3 py-1">MySQL</span>
           <span class="rounded-full bg-card px-3 py-1">Chart.js</span>
         </div>
       </section>
@@ -82,35 +85,125 @@
         <ul class="mt-4 space-y-3 text-base text-dark/80">
           <li class="flex items-start gap-3">
             <span class="mt-1 h-2 w-2 rounded-full bg-accent"></span>
-            <span>Bank CSV importer with category suggestions powered by rules engine.</span>
+            <span><strong>Dashboard Overview</strong> – Real-time financial summary with visual comparisons between income and expenses.</span>
           </li>
           <li class="flex items-start gap-3">
             <span class="mt-1 h-2 w-2 rounded-full bg-accent"></span>
-            <span>Interactive charts for cash flow, savings progress, and debt payoff.</span>
+            <span><strong>Transaction Management</strong> – Record, filter, and export transactions with calendar views and category filters.</span>
           </li>
           <li class="flex items-start gap-3">
             <span class="mt-1 h-2 w-2 rounded-full bg-accent"></span>
-            <span>Budget alerts delivered through email digests.</span>
+            <span><strong>Budget Planning</strong> – Monitor monthly limits per category and track actual spending progress.</span>
           </li>
           <li class="flex items-start gap-3">
             <span class="mt-1 h-2 w-2 rounded-full bg-accent"></span>
-            <span>Goal timeline that visualizes milestones and celebrates wins.</span>
+            <span><strong>Category System</strong> – Organize income and expense entries with customizable color-coded labels.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 h-2 w-2 rounded-full bg-accent"></span>
+            <span><strong>Multi-Wallet Support</strong> – Track balances across cash, bank, and digital wallets.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 h-2 w-2 rounded-full bg-accent"></span>
+            <span><strong>Reports &amp; Insights</strong> – Visualize trends with charts that highlight spending distribution.</span>
           </li>
         </ul>
       </section>
 
       <section class="mt-8">
         <h2 class="text-lg font-semibold">Screenshots</h2>
-        <div class="mt-4 grid gap-4 sm:grid-cols-2">
-          <img src="/assets/screenshots/finance-1.png" alt="Financial tracker dashboard" class="rounded-lg shadow-md" />
-          <img src="/assets/screenshots/finance-2.png" alt="Financial tracker goals" class="rounded-lg shadow-md" />
+        <div class="mt-4 grid gap-6 sm:grid-cols-2">
+          <figure class="space-y-3 rounded-xl bg-white p-4 shadow-md">
+            <img
+              src="/assets/ss/financial1.png"
+              alt="Dashboard summarizing monthly income, expenses, and wallet balances"
+              class="w-full rounded-lg"
+              loading="lazy"
+            />
+            <figcaption class="text-sm text-dark/70">
+              <span class="font-semibold text-dark">🏠 Dashboard.</span>
+              Presents total income, expense, and net balance for the current month alongside a six-month comparison chart and wallet breakdowns for Cash, BCA, and GoPay.
+            </figcaption>
+          </figure>
+          <figure class="space-y-3 rounded-xl bg-white p-4 shadow-md">
+            <img
+              src="/assets/ss/financial2.png"
+              alt="Transaction list with filters for date range, wallet, category, and type"
+              class="w-full rounded-lg"
+              loading="lazy"
+            />
+            <figcaption class="text-sm text-dark/70">
+              <span class="font-semibold text-dark">💸 Transactions – Filters &amp; Totals.</span>
+              Enables filtering by date range, wallet, category, and type while summarizing income, expenses, and balance for the selected period.
+            </figcaption>
+          </figure>
+          <figure class="space-y-3 rounded-xl bg-white p-4 shadow-md">
+            <img
+              src="/assets/ss/financial3.png"
+              alt="Calendar view highlighting transaction activity across the month"
+              class="w-full rounded-lg"
+              loading="lazy"
+            />
+            <figcaption class="text-sm text-dark/70">
+              <span class="font-semibold text-dark">💸 Transactions – Calendar View.</span>
+              Visualizes daily transaction activity on a calendar to spotlight high-spend dates and recurring patterns at a glance.
+            </figcaption>
+          </figure>
+          <figure class="space-y-3 rounded-xl bg-white p-4 shadow-md">
+            <img
+              src="/assets/ss/financial4.png"
+              alt="Budget management cards comparing planned and actual spend per category"
+              class="w-full rounded-lg"
+              loading="lazy"
+            />
+            <figcaption class="text-sm text-dark/70">
+              <span class="font-semibold text-dark">📊 Budget Management.</span>
+              Shows budget versus actual spending, remaining balances, and a summary of current-month transactions per category.
+            </figcaption>
+          </figure>
+          <figure class="space-y-3 rounded-xl bg-white p-4 shadow-md">
+            <img
+              src="/assets/ss/financial5.png"
+              alt="Category management table with color-coded income and expense tags"
+              class="w-full rounded-lg"
+              loading="lazy"
+            />
+            <figcaption class="text-sm text-dark/70">
+              <span class="font-semibold text-dark">🗂️ Categories.</span>
+              Lets users add, edit, or delete labeled categories while separating income and expense types for accurate reporting.
+            </figcaption>
+          </figure>
+          <figure class="space-y-3 rounded-xl bg-white p-4 shadow-md">
+            <img
+              src="/assets/ss/financial6.png"
+              alt="Wallet overview highlighting balances and transaction totals"
+              class="w-full rounded-lg"
+              loading="lazy"
+            />
+            <figcaption class="text-sm text-dark/70">
+              <span class="font-semibold text-dark">💰 Wallets.</span>
+              Displays each wallet’s income, expenses, running balance, and color tags so multiple money sources stay organized.
+            </figcaption>
+          </figure>
+          <figure class="space-y-3 rounded-xl bg-white p-4 shadow-md sm:col-span-2">
+            <img
+              src="/assets/ss/financial7.png"
+              alt="Reports dashboard with income vs expense, wallet distribution, and category summaries"
+              class="w-full rounded-lg"
+              loading="lazy"
+            />
+            <figcaption class="text-sm text-dark/70">
+              <span class="font-semibold text-dark">📈 Reports.</span>
+              Combines monthly income versus expense charts, wallet distribution donuts, weekly performance trends, and detailed category summaries to uncover financial patterns.
+            </figcaption>
+          </figure>
         </div>
       </section>
 
       <section class="mt-8 space-y-4 text-base leading-relaxed text-dark/80">
         <h2 class="text-lg font-semibold">Outcome</h2>
         <p>
-          Freelance clients reported clearer budgeting decisions within the first month. Building the tracker deepened my TypeScript discipline and experience with server-side rendering patterns in Next.js.
+          Shipping this planner aligned stakeholders around a single source of financial truth. It strengthened my Laravel expertise, Vite integration workflow, and front-end data visualization skills.
         </p>
       </section>
 
