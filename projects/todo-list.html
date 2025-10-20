@@ -100,9 +100,58 @@
 
       <section class="mt-8">
         <h2 class="text-lg font-semibold">Screenshots</h2>
-        <div class="mt-4 grid gap-4 sm:grid-cols-2">
-          <img src="/assets/screenshots/todo-1.png" alt="To-Do board" class="rounded-lg shadow-md" />
-          <img src="/assets/screenshots/todo-2.png" alt="To-Do analytics" class="rounded-lg shadow-md" />
+        <div class="mt-4 grid gap-6 sm:grid-cols-2">
+          <figure class="space-y-3 rounded-xl bg-white p-4 shadow-md">
+            <img
+              src="/assets/todo/dashboard-overview.svg"
+              alt="Dashboard view showing filters, quick navigation, and task creation form"
+              class="w-full rounded-lg"
+            />
+            <figcaption class="text-sm text-dark/70">
+              <span class="font-semibold text-dark">Dashboard – Task Overview and Filters.</span>
+              Displays the welcome banner, current date, and navigation buttons (Tasks / Calendar). The filter section allows
+              searching by title or notes, filtering by status, and sorting tasks. The “Add a Task” form lets users create new
+              tasks with title, due date, priority, and notes.
+            </figcaption>
+          </figure>
+          <figure class="space-y-3 rounded-xl bg-white p-4 shadow-md">
+            <img
+              src="/assets/todo/task-list-bulk-actions.svg"
+              alt="Task list table with bulk actions, quick edit, and priority badges"
+              class="w-full rounded-lg"
+            />
+            <figcaption class="text-sm text-dark/70">
+              <span class="font-semibold text-dark">Task List – Bulk Actions and Quick Edit.</span>
+              Shows the full task table with columns for title, due date, priority, and status. Includes bulk actions (toggle
+              done / delete), inline status updates, and quick edit options for each row. Color-coded badges indicate priority
+              and completion status.
+            </figcaption>
+          </figure>
+          <figure class="space-y-3 rounded-xl bg-white p-4 shadow-md">
+            <img
+              src="/assets/todo/calendar-view.svg"
+              alt="Monthly calendar view highlighting task deadlines by priority"
+              class="w-full rounded-lg"
+            />
+            <figcaption class="text-sm text-dark/70">
+              <span class="font-semibold text-dark">Calendar View – Monthly Schedule.</span>
+              Provides an interactive monthly calendar highlighting each day’s tasks. Tasks are color-coded by priority, and
+              users can navigate between months or jump back to the current one. This view helps visualize deadlines and
+              workload distribution at a glance.
+            </figcaption>
+          </figure>
+          <figure class="space-y-3 rounded-xl bg-white p-4 shadow-md">
+            <img
+              src="/assets/todo/statistics-overview.svg"
+              alt="Statistics panel with monthly highlights and weekly breakdown"
+              class="w-full rounded-lg"
+            />
+            <figcaption class="text-sm text-dark/70">
+              <span class="font-semibold text-dark">Statistics – Monthly Highlights &amp; Weekly Breakdown.</span>
+              Displays analytical summaries of completed and active tasks by priority category. The right-side “Weekly
+              Breakdown” panel shows due dates and completion status for each week, giving a clear productivity overview.
+            </figcaption>
+          </figure>
         </div>
       </section>
 

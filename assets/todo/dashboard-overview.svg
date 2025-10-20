@@ -1,0 +1,20 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="675" rx="32" fill="#F3F4F6"/>
+  <rect x="48" y="48" width="1104" height="96" rx="24" fill="#1F2937"/>
+  <text x="96" y="110" fill="#F9FAFB" font-family="'Poppins', 'Arial', sans-serif" font-size="42" font-weight="600">Dashboard – Task Overview</text>
+  <text x="96" y="154" fill="#D1D5DB" font-family="'Inter', 'Arial', sans-serif" font-size="24">Filters, quick navigation, and creation form</text>
+  <rect x="48" y="176" width="1104" height="451" rx="28" fill="white"/>
+  <rect x="96" y="224" width="500" height="56" rx="16" fill="#F9FAFB" stroke="#D1D5DB" stroke-width="2"/>
+  <text x="112" y="260" fill="#6B7280" font-family="'Inter', 'Arial', sans-serif" font-size="22">Search by title or notes…</text>
+  <rect x="640" y="224" width="168" height="56" rx="16" fill="#F9FAFB" stroke="#D1D5DB" stroke-width="2"/>
+  <text x="664" y="260" fill="#6B7280" font-family="'Inter', 'Arial', sans-serif" font-size="22">Status</text>
+  <rect x="832" y="224" width="168" height="56" rx="16" fill="#F9FAFB" stroke="#D1D5DB" stroke-width="2"/>
+  <text x="856" y="260" fill="#6B7280" font-family="'Inter', 'Arial', sans-serif" font-size="22">Sort</text>
+  <rect x="96" y="312" width="1008" height="160" rx="24" fill="#FEF3C7" stroke="#F59E0B" stroke-width="3" opacity="0.75"/>
+  <text x="128" y="368" fill="#92400E" font-family="'Poppins', 'Arial', sans-serif" font-size="32" font-weight="600">Add a Task</text>
+  <text x="128" y="406" fill="#92400E" font-family="'Inter', 'Arial', sans-serif" font-size="22">Title · Due Date · Priority · Notes</text>
+  <rect x="96" y="512" width="312" height="96" rx="24" fill="#2563EB"/>
+  <text x="128" y="572" fill="#F9FAFB" font-family="'Poppins', 'Arial', sans-serif" font-size="30" font-weight="600">Tasks</text>
+  <rect x="432" y="512" width="312" height="96" rx="24" fill="#10B981"/>
+  <text x="464" y="572" fill="#F9FAFB" font-family="'Poppins', 'Arial', sans-serif" font-size="30" font-weight="600">Calendar</text>
+</svg>
