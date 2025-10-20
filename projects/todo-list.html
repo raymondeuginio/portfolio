@@ -3,10 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="title" content="To-Do List Web App | Raymond Euginio Kent Sanjaya" />
-    <meta name="description" content="Case study of the To-Do List Web App built by Raymond Euginio Kent Sanjaya, featuring drag-and-drop organization and progress tracking." />
+    <meta name="title" content="To-Do List Manager | Raymond Euginio Kent Sanjaya" />
+    <meta
+      name="description"
+      content="A Laravel 12 + Vite to-do manager featuring full task lifecycle controls, advanced filtering, bulk actions, analytics, CSV export, and a calendar-first overview."
+    />
     <meta name="author" content="Raymond Euginio Kent Sanjaya" />
-    <title>To-Do List Web App | Raymond Euginio Kent Sanjaya</title>
+    <title>To-Do List Manager | Raymond Euginio Kent Sanjaya</title>
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -54,25 +57,26 @@
 
     <main class="mx-auto max-w-5xl px-6 py-16">
       <header class="space-y-3">
-        <h1 class="text-3xl font-semibold sm:text-4xl">To-Do List Web App</h1>
-        <p class="text-base text-muted">React | Node.js | MongoDB | TailwindCSS</p>
+        <h1 class="text-3xl font-semibold sm:text-4xl">To-Do List Manager</h1>
+        <p class="text-base text-muted">Laravel 12 | PHP 8.2 | Vite | Tailwind CSS 4 | SQLite</p>
       </header>
 
       <section class="mt-8 space-y-4 text-base leading-relaxed text-dark/80">
         <h2 class="text-lg font-semibold">Overview</h2>
         <p>
-          I built this web app to help students balance class assignments and personal tasks. The interface focuses on clarity, enabling drag-and-drop between lists, reminders, and a streak tracker that rewards consistent progress.
+          A Laravel 12 + Vite application that helps you manage daily tasks with powerful filtering, quick editing, and a calendar-first overview. The interface is crafted with Tailwind CSS 4 utilities to keep the experience modern and responsive.
         </p>
       </section>
 
       <section class="mt-8">
         <h2 class="text-lg font-semibold">Tech Stack</h2>
         <div class="mt-4 flex flex-wrap gap-2 text-xs font-medium text-muted">
-          <span class="rounded-full bg-card px-3 py-1">React</span>
-          <span class="rounded-full bg-card px-3 py-1">Node.js</span>
-          <span class="rounded-full bg-card px-3 py-1">Express</span>
-          <span class="rounded-full bg-card px-3 py-1">MongoDB</span>
-          <span class="rounded-full bg-card px-3 py-1">TailwindCSS</span>
+          <span class="rounded-full bg-card px-3 py-1">Laravel 12</span>
+          <span class="rounded-full bg-card px-3 py-1">PHP ^8.2</span>
+          <span class="rounded-full bg-card px-3 py-1">Composer</span>
+          <span class="rounded-full bg-card px-3 py-1">Vite</span>
+          <span class="rounded-full bg-card px-3 py-1">Tailwind CSS 4</span>
+          <span class="rounded-full bg-card px-3 py-1">SQLite</span>
         </div>
       </section>
 
@@ -81,19 +85,27 @@
         <ul class="mt-4 space-y-3 text-base text-dark/80">
           <li class="flex items-start gap-3">
             <span class="mt-1 h-2 w-2 rounded-full bg-accent"></span>
-            <span>Kanban-inspired drag-and-drop between Today, Upcoming, and Done lists.</span>
+            <span>Full task lifecycle management: create, edit, mark complete, or delete tasks straight from the main list.</span>
           </li>
           <li class="flex items-start gap-3">
             <span class="mt-1 h-2 w-2 rounded-full bg-accent"></span>
-            <span>Recurring task scheduling with email reminders.</span>
+            <span>Filtering &amp; search: locate tasks by title/notes, filter by status (to do/done), and sort by creation time, due date, or priority.</span>
           </li>
           <li class="flex items-start gap-3">
             <span class="mt-1 h-2 w-2 rounded-full bg-accent"></span>
-            <span>Focus mode with Pomodoro-style timer integration.</span>
+            <span>Bulk actions: select multiple tasks at once to delete them or toggle completion status in a single operation.</span>
           </li>
           <li class="flex items-start gap-3">
             <span class="mt-1 h-2 w-2 rounded-full bg-accent"></span>
-            <span>Progress analytics summarizing weekly completions and categories.</span>
+            <span>Productivity insights: weekly and monthly statistics with progress indicators plus totals for active, completed, and pending tasks.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 h-2 w-2 rounded-full bg-accent"></span>
+            <span>CSV export: download the currently filtered task list in CSV format for reporting or backups.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 h-2 w-2 rounded-full bg-accent"></span>
+            <span>Interactive calendar: inspect monthly task distribution with priority breakdowns and weekly summaries.</span>
           </li>
         </ul>
       </section>
@@ -162,7 +174,7 @@
       <section class="mt-8 space-y-4 text-base leading-relaxed text-dark/80">
         <h2 class="text-lg font-semibold">Outcome</h2>
         <p>
-          The app is used by a small community of students who report fewer missed deadlines. Building it strengthened my React state management patterns and ability to ship fullstack experiences quickly.
+          Delivering the tool honed my Laravel workflow for CRUD-heavy products and reinforced best practices for reactive UI updates with Vite-powered builds.
         </p>
       </section>
 
