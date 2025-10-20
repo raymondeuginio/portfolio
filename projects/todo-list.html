@@ -42,6 +42,38 @@
       crossorigin="anonymous"
       defer
     ></script>
+    <style>
+      .screenshot-card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        border-radius: 1rem;
+        background: #ffffff;
+        box-shadow: 0 22px 45px rgba(15, 23, 42, 0.1);
+        overflow: hidden;
+      }
+
+      .screenshot-media {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 16 / 10;
+        overflow: hidden;
+        background: radial-gradient(circle at 20% 20%, rgba(254, 124, 37, 0.08), rgba(15, 23, 42, 0.05));
+      }
+
+      .screenshot-media img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .screenshot-caption {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 1.25rem 1.5rem 1.5rem;
+      }
+    </style>
   </head>
   <body class="bg-base text-dark font-poppins">
     <header class="border-b border-gray-200 bg-base">
@@ -113,56 +145,60 @@
       <section class="mt-8">
         <h2 class="text-lg font-semibold">Screenshots</h2>
         <div class="mt-4 grid gap-6 sm:grid-cols-2">
-          <figure class="space-y-3 rounded-xl bg-white p-4 shadow-md">
-            <img
-              src="/assets/ss/todolist1.png"
-              alt="Dashboard view showing filters, quick navigation, and task creation form"
-              class="w-full rounded-lg"
-              loading="lazy"
-            />
-            <figcaption class="text-sm text-dark/70">
+          <figure class="screenshot-card">
+            <div class="screenshot-media">
+              <img
+                src="/assets/ss/todolist1.png"
+                alt="Dashboard view showing filters, quick navigation, and task creation form"
+                loading="lazy"
+              />
+            </div>
+            <figcaption class="screenshot-caption text-sm text-dark/70">
               <span class="font-semibold text-dark">Dashboard – Task Overview and Filters.</span>
               Displays the welcome banner, current date, and navigation buttons (Tasks / Calendar). The filter section allows
               searching by title or notes, filtering by status, and sorting tasks. The “Add a Task” form lets users create new
               tasks with title, due date, priority, and notes.
             </figcaption>
           </figure>
-          <figure class="space-y-3 rounded-xl bg-white p-4 shadow-md">
-            <img
-              src="/assets/ss/todolist2.png"
-              alt="Task list table with bulk actions, quick edit, and priority badges"
-              class="w-full rounded-lg"
-              loading="lazy"
-            />
-            <figcaption class="text-sm text-dark/70">
+          <figure class="screenshot-card">
+            <div class="screenshot-media">
+              <img
+                src="/assets/ss/todolist2.png"
+                alt="Task list table with bulk actions, quick edit, and priority badges"
+                loading="lazy"
+              />
+            </div>
+            <figcaption class="screenshot-caption text-sm text-dark/70">
               <span class="font-semibold text-dark">Task List – Bulk Actions and Quick Edit.</span>
               Shows the full task table with columns for title, due date, priority, and status. Includes bulk actions (toggle
               done / delete), inline status updates, and quick edit options for each row. Color-coded badges indicate priority
               and completion status.
             </figcaption>
           </figure>
-          <figure class="space-y-3 rounded-xl bg-white p-4 shadow-md">
-            <img
-              src="/assets/ss/todolist3.png"
-              alt="Monthly calendar view highlighting task deadlines by priority"
-              class="w-full rounded-lg"
-              loading="lazy"
-            />
-            <figcaption class="text-sm text-dark/70">
+          <figure class="screenshot-card">
+            <div class="screenshot-media">
+              <img
+                src="/assets/ss/todolist3.png"
+                alt="Monthly calendar view highlighting task deadlines by priority"
+                loading="lazy"
+              />
+            </div>
+            <figcaption class="screenshot-caption text-sm text-dark/70">
               <span class="font-semibold text-dark">Calendar View – Monthly Schedule.</span>
               Provides an interactive monthly calendar highlighting each day’s tasks. Tasks are color-coded by priority, and
               users can navigate between months or jump back to the current one. This view helps visualize deadlines and
               workload distribution at a glance.
             </figcaption>
           </figure>
-          <figure class="space-y-3 rounded-xl bg-white p-4 shadow-md">
-            <img
-              src="/assets/ss/todolist4.png"
-              alt="Statistics panel with monthly highlights and weekly breakdown"
-              class="w-full rounded-lg"
-              loading="lazy"
-            />
-            <figcaption class="text-sm text-dark/70">
+          <figure class="screenshot-card">
+            <div class="screenshot-media">
+              <img
+                src="/assets/ss/todolist4.png"
+                alt="Statistics panel with monthly highlights and weekly breakdown"
+                loading="lazy"
+              />
+            </div>
+            <figcaption class="screenshot-caption text-sm text-dark/70">
               <span class="font-semibold text-dark">Statistics – Monthly Highlights &amp; Weekly Breakdown.</span>
               Displays analytical summaries of completed and active tasks by priority category. The right-side “Weekly
               Breakdown” panel shows due dates and completion status for each week, giving a clear productivity overview.
