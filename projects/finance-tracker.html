@@ -42,6 +42,38 @@
       crossorigin="anonymous"
       defer
     ></script>
+    <style>
+      .screenshot-card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        border-radius: 1rem;
+        background: #ffffff;
+        box-shadow: 0 22px 45px rgba(15, 23, 42, 0.1);
+        overflow: hidden;
+      }
+
+      .screenshot-media {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 16 / 10;
+        overflow: hidden;
+        background: radial-gradient(circle at 20% 20%, rgba(15, 163, 255, 0.12), rgba(15, 23, 42, 0.05));
+      }
+
+      .screenshot-media img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .screenshot-caption {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 1.25rem 1.5rem 1.5rem;
+      }
+    </style>
   </head>
   <body class="bg-base text-dark font-poppins">
     <header class="border-b border-gray-200 bg-base">
@@ -113,74 +145,80 @@
       <section class="mt-8">
         <h2 class="text-lg font-semibold">Screenshots</h2>
         <div class="mt-4 grid gap-6 sm:grid-cols-2">
-          <figure class="space-y-3 rounded-xl bg-white p-4 shadow-md">
-            <img
-              src="/assets/ss/financial1.png"
-              alt="Dashboard summarizing monthly income, expenses, and wallet balances"
-              class="w-full rounded-lg"
-              loading="lazy"
-            />
-            <figcaption class="text-sm text-dark/70">
+          <figure class="screenshot-card">
+            <div class="screenshot-media">
+              <img
+                src="/assets/ss/financial1.png"
+                alt="Dashboard summarizing monthly income, expenses, and wallet balances"
+                loading="lazy"
+              />
+            </div>
+            <figcaption class="screenshot-caption text-sm text-dark/70">
               <span class="font-semibold text-dark">🏠 Dashboard.</span>
               Presents total income, expense, and net balance for the current month alongside a six-month comparison chart and wallet breakdowns for Cash, BCA, and GoPay.
             </figcaption>
           </figure>
-          <figure class="space-y-3 rounded-xl bg-white p-4 shadow-md">
-            <img
-              src="/assets/ss/financial2.png"
-              alt="Transaction list with filters for date range, wallet, category, and type"
-              class="w-full rounded-lg"
-              loading="lazy"
-            />
-            <figcaption class="text-sm text-dark/70">
+          <figure class="screenshot-card">
+            <div class="screenshot-media">
+              <img
+                src="/assets/ss/financial2.png"
+                alt="Transaction list with filters for date range, wallet, category, and type"
+                loading="lazy"
+              />
+            </div>
+            <figcaption class="screenshot-caption text-sm text-dark/70">
               <span class="font-semibold text-dark">💸 Transactions – Filters, Totals &amp; Calendar View.</span>
               Enables filtering by date range, wallet, category, and type while summarizing income, expenses, and balance for the selected period. Also Visualizes daily transaction activity on a calendar to spotlight high-spend dates and recurring patterns at a glance.
             </figcaption>
           </figure>
-          <figure class="space-y-3 rounded-xl bg-white p-4 shadow-md">
-            <img
-              src="/assets/ss/financial4.png"
-              alt="Budget management cards comparing planned and actual spend per category"
-              class="w-full rounded-lg"
-              loading="lazy"
-            />
-            <figcaption class="text-sm text-dark/70">
+          <figure class="screenshot-card">
+            <div class="screenshot-media">
+              <img
+                src="/assets/ss/financial4.png"
+                alt="Budget management cards comparing planned and actual spend per category"
+                loading="lazy"
+              />
+            </div>
+            <figcaption class="screenshot-caption text-sm text-dark/70">
               <span class="font-semibold text-dark">📊 Budget Management.</span>
               Shows budget versus actual spending, remaining balances, and a summary of current-month transactions per category.
             </figcaption>
           </figure>
-          <figure class="space-y-3 rounded-xl bg-white p-4 shadow-md">
-            <img
-              src="/assets/ss/financial5.png"
-              alt="Category management table with color-coded income and expense tags"
-              class="w-full rounded-lg"
-              loading="lazy"
-            />
-            <figcaption class="text-sm text-dark/70">
+          <figure class="screenshot-card">
+            <div class="screenshot-media">
+              <img
+                src="/assets/ss/financial5.png"
+                alt="Category management table with color-coded income and expense tags"
+                loading="lazy"
+              />
+            </div>
+            <figcaption class="screenshot-caption text-sm text-dark/70">
               <span class="font-semibold text-dark">🗂️ Categories.</span>
               Lets users add, edit, or delete labeled categories while separating income and expense types for accurate reporting.
             </figcaption>
           </figure>
-          <figure class="space-y-3 rounded-xl bg-white p-4 shadow-md">
-            <img
-              src="/assets/ss/financial6.png"
-              alt="Wallet overview highlighting balances and transaction totals"
-              class="w-full rounded-lg"
-              loading="lazy"
-            />
-            <figcaption class="text-sm text-dark/70">
+          <figure class="screenshot-card">
+            <div class="screenshot-media">
+              <img
+                src="/assets/ss/financial6.png"
+                alt="Wallet overview highlighting balances and transaction totals"
+                loading="lazy"
+              />
+            </div>
+            <figcaption class="screenshot-caption text-sm text-dark/70">
               <span class="font-semibold text-dark">💰 Wallets.</span>
               Displays each wallet’s income, expenses, running balance, and color tags so multiple money sources stay organized.
             </figcaption>
           </figure>
-          <figure class="space-y-3 rounded-xl bg-white p-4 shadow-md sm:col-span-2">
-            <img
-              src="/assets/ss/financial7.png"
-              alt="Reports dashboard with income vs expense, wallet distribution, and category summaries"
-              class="w-full rounded-lg"
-              loading="lazy"
-            />
-            <figcaption class="text-sm text-dark/70">
+          <figure class="screenshot-card sm:col-span-2">
+            <div class="screenshot-media">
+              <img
+                src="/assets/ss/financial7.png"
+                alt="Reports dashboard with income vs expense, wallet distribution, and category summaries"
+                loading="lazy"
+              />
+            </div>
+            <figcaption class="screenshot-caption text-sm text-dark/70">
               <span class="font-semibold text-dark">📈 Reports.</span>
               Combines monthly income versus expense charts, wallet distribution donuts, weekly performance trends, and detailed category summaries to uncover financial patterns.
             </figcaption>
