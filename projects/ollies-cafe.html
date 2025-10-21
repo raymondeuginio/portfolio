@@ -70,6 +70,16 @@
         box-shadow: 0 15px 35px rgba(15, 23, 42, 0.2);
       }
 
+      .screenshot-media.landscape {
+        aspect-ratio: 16 / 9;
+        padding: 1rem;
+      }
+
+      .screenshot-media.landscape img {
+        width: 100%;
+        height: auto;
+      }
+
       .screenshot-caption {
         display: flex;
         flex-direction: column;
@@ -176,7 +186,7 @@
             </figcaption>
           </figure>
           <figure class="screenshot-card">
-            <div class="screenshot-media">
+            <div class="screenshot-media landscape">
               <img src="/assets/ss/ollies5.png" alt="Admin Panel – Menu Management" loading="lazy" />
             </div>
             <figcaption class="screenshot-caption text-sm text-dark/70">
@@ -185,7 +195,7 @@
             </figcaption>
           </figure>
           <figure class="screenshot-card">
-            <div class="screenshot-media">
+            <div class="screenshot-media landscape">
               <img src="/assets/ss/ollies6.png" alt="Admin Dashboard – Sales Overview" loading="lazy" />
             </div>
             <figcaption class="screenshot-caption text-sm text-dark/70">
