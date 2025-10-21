@@ -53,15 +53,21 @@
       .screenshot-media {
         position: relative;
         width: 100%;
-        aspect-ratio: 16 / 10;
+        aspect-ratio: 9 / 19.5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1.5rem;
         overflow: hidden;
-        background: radial-gradient(circle at 20% 20%, rgba(254, 124, 37, 0.12), rgba(30, 30, 30, 0.05));
+        background: radial-gradient(circle at 20% 20%, rgba(254, 124, 37, 0.16), rgba(30, 30, 30, 0.08));
       }
 
       .screenshot-media img {
-        width: 100%;
+        width: auto;
         height: 100%;
-        object-fit: cover;
+        max-height: 100%;
+        border-radius: 1.5rem;
+        box-shadow: 0 15px 35px rgba(15, 23, 42, 0.2);
       }
 
       .screenshot-caption {
