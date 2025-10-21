@@ -53,47 +53,42 @@
     </header>
 
     <main class="mx-auto max-w-5xl px-6 py-16">
-      <div class="mx-auto max-w-3xl space-y-6 text-center">
-        <h1 class="text-3xl font-semibold sm:text-4xl">Let’s collaborate or connect!</h1>
-        <p class="text-base text-muted">
-          I’m always open to discussing new ideas, collaborations, or opportunities to learn. Reach out through any of the channels below or send a message directly.
-        </p>
-        <div class="flex flex-wrap justify-center gap-4">
-          <a href="https://github.com/raymondeuginio" class="inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-semibold text-dark shadow-md transition hover:-translate-y-0.5 hover:shadow-lg">
-            <i class="fa-brands fa-github text-xl text-accent"></i>
-            GitHub
+      <div class="mx-auto max-w-3xl space-y-10 text-center">
+        <div class="space-y-4">
+          <h1 class="text-3xl font-semibold sm:text-4xl">Mari terhubung langsung</h1>
+          <p class="text-base text-muted">
+            Kamu bisa klik salah satu logo di bawah ini untuk langsung terhubung lewat platform pilihanmu.
+          </p>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-6">
+          <a
+            href="https://github.com/raymondeuginio"
+            class="flex h-24 w-24 items-center justify-center rounded-2xl bg-white shadow-md transition hover:-translate-y-1 hover:shadow-lg"
+            aria-label="GitHub"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i class="fa-brands fa-github text-4xl text-accent"></i>
           </a>
-          <a href="https://www.linkedin.com/in/raymondeuginio" class="inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-semibold text-dark shadow-md transition hover:-translate-y-0.5 hover:shadow-lg">
-            <i class="fa-brands fa-linkedin text-xl text-accent"></i>
-            LinkedIn
+          <a
+            href="https://www.linkedin.com/in/raymondeuginio"
+            class="flex h-24 w-24 items-center justify-center rounded-2xl bg-white shadow-md transition hover:-translate-y-1 hover:shadow-lg"
+            aria-label="LinkedIn"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i class="fa-brands fa-linkedin text-4xl text-accent"></i>
           </a>
-          <a href="mailto:raymond.535230044@stu.untar.ac.id" class="inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-semibold text-dark shadow-md transition hover:-translate-y-0.5 hover:shadow-lg">
-            <i class="fa-solid fa-envelope text-xl text-accent"></i>
-            Email
+          <a
+            href="mailto:raymond.535230044@stu.untar.ac.id"
+            class="flex h-24 w-24 items-center justify-center rounded-2xl bg-white shadow-md transition hover:-translate-y-1 hover:shadow-lg"
+            aria-label="Email"
+          >
+            <i class="fa-solid fa-envelope text-4xl text-accent"></i>
           </a>
         </div>
       </div>
-
-      <form action="https://formspree.io/f/mkgnkngy" method="POST" class="mx-auto mt-12 max-w-3xl space-y-6 rounded-2xl bg-white p-8 shadow-md">
-        <div class="grid gap-6 md:grid-cols-2">
-          <label class="flex flex-col text-left text-sm font-medium text-muted">
-            Name
-            <input type="text" name="name" required class="mt-2 rounded-xl border border-gray-200 bg-base px-4 py-3 text-sm text-dark focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/40" placeholder="Your name" />
-          </label>
-          <label class="flex flex-col text-left text-sm font-medium text-muted">
-            Email
-            <input type="email" name="email" required class="mt-2 rounded-xl border border-gray-200 bg-base px-4 py-3 text-sm text-dark focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/40" placeholder="you@example.com" />
-          </label>
-        </div>
-        <label class="flex flex-col text-left text-sm font-medium text-muted">
-          Message
-          <textarea name="message" rows="5" required class="mt-2 rounded-xl border border-gray-200 bg-base px-4 py-3 text-sm text-dark focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/40" placeholder="How can we work together?"></textarea>
-        </label>
-        <button type="submit" class="inline-flex w-full items-center justify-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white transition hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent">
-          Send Message
-          <i class="fa-solid fa-paper-plane"></i>
-        </button>
-      </form>
     </main>
 
     <footer class="border-t border-gray-200 bg-base">
