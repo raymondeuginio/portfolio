@@ -3,10 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="title" content="Regina Salon Management System | Raymond Euginio Kent Sanjaya" />
-    <meta name="description" content="Case study of the Regina Salon Management System by Raymond Euginio Kent Sanjaya, covering goals, tech stack, features, and outcomes." />
+    <meta name="title" content="Regina Salon & Spa | Raymond Euginio Kent Sanjaya" />
+    <meta
+      name="description"
+      content="Case study for Regina Salon & Spa, a Laravel 12 platform that digitises salon bookings with curated services, calendar-based scheduling, stylist assignments, and admin workflows."
+    />
     <meta name="author" content="Raymond Euginio Kent Sanjaya" />
-    <title>Regina Salon Management System | Raymond Euginio Kent Sanjaya</title>
+    <title>Regina Salon &amp; Spa | Raymond Euginio Kent Sanjaya</title>
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -39,41 +42,64 @@
       crossorigin="anonymous"
       defer
     ></script>
+    <style>
+      .screenshot-card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        border-radius: 1rem;
+        background: #ffffff;
+        box-shadow: 0 22px 45px rgba(15, 23, 42, 0.1);
+        overflow: hidden;
+      }
+
+      .screenshot-media {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 16 / 10;
+        overflow: hidden;
+        background: radial-gradient(circle at 20% 20%, rgba(254, 124, 37, 0.08), rgba(15, 23, 42, 0.05));
+      }
+
+      .screenshot-media img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .screenshot-caption {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 1.25rem 1.5rem 1.5rem;
+      }
+    </style>
   </head>
   <body class="bg-base text-dark font-poppins">
     <header class="border-b border-gray-200 bg-base">
       <div class="mx-auto flex max-w-5xl items-center justify-between px-6 py-6">
         <a href="/" class="text-lg font-semibold tracking-wide">REKS</a>
         <nav class="flex gap-6 text-sm font-medium text-muted">
-          <a href="/" class="hover:text-accent transition-colors">Home</a>
-          <a href="/projects.html" class="hover:text-accent transition-colors">Projects</a>
-          <a href="/contact.html" class="hover:text-accent transition-colors">Contact</a>
+          <a href="/" class="transition-colors hover:text-accent">Home</a>
+          <a href="/projects.html" class="transition-colors hover:text-accent">Projects</a>
+          <a href="/contact.html" class="transition-colors hover:text-accent">Contact</a>
         </nav>
       </div>
     </header>
 
     <main class="mx-auto max-w-5xl px-6 py-16">
       <header class="space-y-3">
-        <h1 class="text-3xl font-semibold sm:text-4xl">Regina Salon Management System</h1>
-        <p class="text-base text-muted">Laravel | MySQL | TailwindCSS | Livewire</p>
+        <h1 class="text-3xl font-semibold sm:text-4xl">Regina Salon &amp; Spa</h1>
+        <p class="text-base text-muted">Laravel 12 · Filament · Tailwind CSS · Alpine.js</p>
       </header>
 
       <section class="mt-8 space-y-4 text-base leading-relaxed text-dark/80">
         <h2 class="text-lg font-semibold">Overview</h2>
         <p>
-          Regina Salon needed a central platform to coordinate appointments, resources, and stylist workloads. I designed a management system that automates booking flows, balances staff availability, and gives the owner visibility into day-to-day metrics.
-        </p>
-      </section>
-
-      <section class="mt-8">
-        <h2 class="text-lg font-semibold">Tech Stack</h2>
-        <div class="mt-4 flex flex-wrap gap-2 text-xs font-medium text-muted">
-          <span class="rounded-full bg-card px-3 py-1">Laravel</span>
-          <span class="rounded-full bg-card px-3 py-1">Livewire</span>
-          <span class="rounded-full bg-card px-3 py-1">MySQL</span>
-          <span class="rounded-full bg-card px-3 py-1">TailwindCSS</span>
-          <span class="rounded-full bg-card px-3 py-1">Alpine.js</span>
-        </div>
+Regina Salon &amp; Spa is a Laravel 12 application that digitises the end-to-end booking experience for a premium beauty
+          salon. The site showcases curated services, highlights the salon brand, and lets registered customers assemble
+          multi-service appointments, assign their preferred stylists, and confirm their visit online through a calendar-based
+          booking journey.        </p>
       </section>
 
       <section class="mt-8">
@@ -81,50 +107,119 @@
         <ul class="mt-4 space-y-3 text-base text-dark/80">
           <li class="flex items-start gap-3">
             <span class="mt-1 h-2 w-2 rounded-full bg-accent"></span>
-            <span>Calendar-based appointment scheduler with automatic clash detection.</span>
+            <span>Marketing landing page with brand story, services highlights, and contact details tailored to Regina Salon.</span>
           </li>
           <li class="flex items-start gap-3">
             <span class="mt-1 h-2 w-2 rounded-full bg-accent"></span>
-            <span>Inventory module tracking product usage and low-stock alerts.</span>
+            <span>Service catalogue grouped by category, complete with pricing, durations, and a smart summary panel that tracks the customers&rsquo; selections in real time.</span>
           </li>
           <li class="flex items-start gap-3">
             <span class="mt-1 h-2 w-2 rounded-full bg-accent"></span>
-            <span>Role-aware dashboard for owner, receptionist, and stylist access.</span>
+            <span>Guided, calendar-based booking flow that validates stylist availability, prevents schedule conflicts, and notifies the team once confirmed.</span>
           </li>
           <li class="flex items-start gap-3">
             <span class="mt-1 h-2 w-2 rounded-full bg-accent"></span>
-            <span>Automated SMS reminders for clients based on appointment status.</span>
+            <span>Authentication &amp; profile management powered by Laravel Breeze so returning customers can reuse their stored contact details.</span>
           </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 h-2 w-2 rounded-full bg-accent"></span>
+            <span>Seeded demo data for stores, categories, services, staff, and admin accounts to help you explore the experience instantly.</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="mt-8 space-y-3 text-base text-dark/80">
+        <h2 class="text-lg font-semibold">Tech Stack</h2>
+        <ul class="mt-2 space-y-2">
+          <li><strong class="text-dark">Backend:</strong> PHP 8.2, Laravel 12, Filament admin tooling</li>
+          <li><strong class="text-dark">Frontend:</strong> Blade templates, Tailwind CSS, Alpine.js, Vite asset bundler</li>
+          <li><strong class="text-dark">Database:</strong> SQLite by default (configurable to MySQL/PostgreSQL)</li>
+          <li><strong class="text-dark">Tooling:</strong> PHPUnit for tests, Laravel Sail for containers, Laravel Pint for code style</li>
         </ul>
       </section>
 
       <section class="mt-8">
         <h2 class="text-lg font-semibold">Screenshots</h2>
-        <div class="mt-4 grid gap-4 sm:grid-cols-2">
-          <img src="/assets/screenshots/regina-1.png" alt="Regina Salon dashboard" class="rounded-lg shadow-md" />
-          <img src="/assets/screenshots/regina-2.png" alt="Regina Salon bookings" class="rounded-lg shadow-md" />
+         <div class="mt-4 grid gap-6 sm:grid-cols-2">
+          <figure class="screenshot-card">
+            <div class="screenshot-media">
+              <img
+                src="/assets/ss/regina-landing.png"
+                alt="Regina Salon &amp; Spa landing page hero with brand story and featured services"
+                loading="lazy"
+              />
+            </div>
+            <figcaption class="screenshot-caption text-sm text-dark/70">
+              <span class="font-semibold text-dark">Landing Page – Story &amp; Signature Treatments.</span>
+              Pairs Regina Salon’s brand narrative with featured service highlights and quick contact details to guide new
+              guests toward the booking flow.
+            </figcaption>
+          </figure>
+          <figure class="screenshot-card">
+            <div class="screenshot-media">
+              <img
+                src="/assets/ss/regina-services.png"
+                alt="Service catalogue grouped by category with pricing and duration details"
+                loading="lazy"
+              />
+            </div>
+            <figcaption class="screenshot-caption text-sm text-dark/70">
+              <span class="font-semibold text-dark">Service Catalogue – Curated Packages.</span>
+              Displays categories, treatment descriptions, pricing, durations, and a live summary panel that updates as
+              guests assemble multi-service appointments.
+            </figcaption>
+          </figure>
+          <figure class="screenshot-card">
+            <div class="screenshot-media">
+              <img
+                src="/assets/ss/regina-booking.png"
+                alt="Calendar-based booking flow with stylist availability and time slot selection"
+                loading="lazy"
+              />
+            </div>
+            <figcaption class="screenshot-caption text-sm text-dark/70">
+              <span class="font-semibold text-dark">Booking Flow – Calendar &amp; Stylist Assignment.</span>
+              Guides customers through selecting dates on an availability calendar, choosing stylists, and reviewing
+              conflicts before confirming their visit.
+            </figcaption>
+          </figure>
+          <figure class="screenshot-card">
+            <div class="screenshot-media">
+              <img
+                src="/assets/ss/regina-admin.png"
+                alt="Filament admin dashboard summarizing upcoming appointments and staff schedules"
+                loading="lazy"
+              />
+            </div>
+            <figcaption class="screenshot-caption text-sm text-dark/70">
+              <span class="font-semibold text-dark">Admin Panel – Filament Back Office.</span>
+              Provides the Regina team with Filament-powered management tools for services, staff rosters, bookings, and
+              seeded demo data to accelerate onboarding.
+            </figcaption>
+          </figure>
         </div>
       </section>
 
       <section class="mt-8 space-y-4 text-base leading-relaxed text-dark/80">
         <h2 class="text-lg font-semibold">Outcome</h2>
         <p>
-          The system reduced manual scheduling errors by 60% and allowed the team to forecast peak periods. It also sharpened my ability to structure modular Laravel components and introduce live validation patterns.
-        </p>
+Delivering Regina Salon &amp; Spa sharpened my approach to Laravel domain design and front-of-house booking UX. The
+          release balanced brand storytelling with operational tooling so the salon team can scale services without compromising
+          personal touch.        </p>
       </section>
 
       <div class="mt-12">
-        <a href="/projects.html" class="inline-flex items-center gap-2 rounded-full border border-accent px-5 py-2 text-sm font-semibold text-accent transition hover:bg-accent hover:text-white">
-          <i class="fa-solid fa-arrow-left"></i>
+<a
+          href="/projects.html"
+          class="inline-flex items-center gap-2 rounded-full border border-accent px-5 py-2 text-sm font-semibold text-accent transition hover:bg-accent hover:text-white"
+        >          <i class="fa-solid fa-arrow-left"></i>
           Back to Projects
         </a>
       </div>
     </main>
 
     <footer class="border-t border-gray-200 bg-base">
-      <div class="mx-auto max-w-5xl px-6 py-8 text-sm text-muted">
-        © 2025 Raymond Euginio Kent Sanjaya
-      </div>
+      <div class="mx-auto max-w-5xl px-6 py-8 text-sm text-muted">© 2025 Raymond Euginio Kent Sanjaya</div>
     </footer>
   </body>
 </html>
