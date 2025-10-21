@@ -39,6 +39,38 @@
       crossorigin="anonymous"
       defer
     ></script>
+     <style>
+      .screenshot-card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        border-radius: 1rem;
+        background: #ffffff;
+        box-shadow: 0 22px 45px rgba(15, 23, 42, 0.1);
+        overflow: hidden;
+      }
+
+      .screenshot-media {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 16 / 10;
+        overflow: hidden;
+        background: radial-gradient(circle at 20% 20%, rgba(254, 124, 37, 0.12), rgba(30, 30, 30, 0.05));
+      }
+
+      .screenshot-media img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .screenshot-caption {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 1.25rem 1.5rem 1.5rem;
+      }
+    </style>
   </head>
   <body class="bg-base text-dark font-poppins">
     <header class="border-b border-gray-200 bg-base">
@@ -55,23 +87,23 @@
     <main class="mx-auto max-w-5xl px-6 py-16">
       <header class="space-y-3">
         <h1 class="text-3xl font-semibold sm:text-4xl">Ollie’s Café QR Self-Order System</h1>
-        <p class="text-base text-muted">Laravel | Inertia.js | TailwindCSS | MySQL</p>
+        <p class="text-base text-muted">Laravel 12 | PHP 8.2 | Inertia.js | Vue 3 | Tailwind CSS 4 | MySQL</p>
       </header>
 
       <section class="mt-8 space-y-4 text-base leading-relaxed text-dark/80">
         <h2 class="text-lg font-semibold">Overview</h2>
         <p>
-          Ollie’s Café sought to modernize their ordering experience. I introduced a QR-based ordering system allowing guests to browse the menu, customize items, and pay from their phones. The kitchen receives prioritized tickets while the cashier monitors payments in a single dashboard.
-        </p>
+ A complete QR-powered ordering ecosystem for Ollie’s Café built on Laravel 12 and Inertia.js. Diners scan unique table codes to access a responsive menu, place orders, and receive digital receipts without waiting for staff, while baristas and admins manage live orders, menu updates, and sales insights through a unified dashboard.        </p>
       </section>
 
       <section class="mt-8">
         <h2 class="text-lg font-semibold">Tech Stack</h2>
         <div class="mt-4 flex flex-wrap gap-2 text-xs font-medium text-muted">
-          <span class="rounded-full bg-card px-3 py-1">Laravel</span>
+          <span class="rounded-full bg-card px-3 py-1">Laravel 12</span>
+          <span class="rounded-full bg-card px-3 py-1">PHP ^8.2</span>
           <span class="rounded-full bg-card px-3 py-1">Inertia.js</span>
           <span class="rounded-full bg-card px-3 py-1">Vue 3</span>
-          <span class="rounded-full bg-card px-3 py-1">TailwindCSS</span>
+           <span class="rounded-full bg-card px-3 py-1">Tailwind CSS 4</span>
           <span class="rounded-full bg-card px-3 py-1">MySQL</span>
         </div>
       </section>
@@ -100,9 +132,61 @@
 
       <section class="mt-8">
         <h2 class="text-lg font-semibold">Screenshots</h2>
-        <div class="mt-4 grid gap-4 sm:grid-cols-2">
-          <img src="/assets/screenshots/ollies-1.png" alt="Ollie's Café menu" class="rounded-lg shadow-md" />
-          <img src="/assets/screenshots/ollies-2.png" alt="Ollie's Café dashboard" class="rounded-lg shadow-md" />
+        <div class="mt-4 grid gap-6 sm:grid-cols-2">
+          <figure class="screenshot-card">
+            <div class="screenshot-media">
+              <img src="/assets/ss/ollies1.png" alt="Home Page – Table Order View" loading="lazy" />
+            </div>
+            <figcaption class="screenshot-caption text-sm text-dark/70">
+              <span class="font-semibold text-dark">🏠 Home Page – Table Order View</span>
+              Customers scan a QR code to open the digital menu. The page auto-detects the table ID (e.g., T004), supports keyword search, and shows live availability for every menu item.
+            </figcaption>
+          </figure>
+          <figure class="screenshot-card">
+            <div class="screenshot-media">
+              <img src="/assets/ss/ollies2.png" alt="Checkout Page – Customer Profile Form" loading="lazy" />
+            </div>
+            <figcaption class="screenshot-caption text-sm text-dark/70">
+              <span class="font-semibold text-dark">🛒 Checkout Page – Customer Profile Form</span>
+              Orders are summarized with subtotal and tax details before payment. A Complete Profile prompt captures the guest’s name and phone so staff can match receipts to tables.
+            </figcaption>
+          </figure>
+          <figure class="screenshot-card">
+            <div class="screenshot-media">
+              <img src="/assets/ss/ollies3.png" alt="Menu List – All Foods View" loading="lazy" />
+            </div>
+            <figcaption class="screenshot-caption text-sm text-dark/70">
+              <span class="font-semibold text-dark">☕ Menu List – All Foods View</span>
+              The All Foods tab organizes dishes into Main Dish, Drinks, and Snacks with pricing, availability badges, and promotional highlights. Guests add items instantly via the green plus button.
+            </figcaption>
+          </figure>
+          <figure class="screenshot-card">
+            <div class="screenshot-media">
+              <img src="/assets/ss/ollies4.png" alt="Digital Receipt Page" loading="lazy" />
+            </div>
+            <figcaption class="screenshot-caption text-sm text-dark/70">
+              <span class="font-semibold text-dark">🧾 Digital Receipt Page</span>
+              After payment, the system issues a digital receipt with transaction metadata, purchased items, totals, and payment method. Guests can return to the menu or download the receipt.
+            </figcaption>
+          </figure>
+          <figure class="screenshot-card">
+            <div class="screenshot-media">
+              <img src="/assets/ss/ollies5.png" alt="Admin Panel – Menu Management" loading="lazy" />
+            </div>
+            <figcaption class="screenshot-caption text-sm text-dark/70">
+              <span class="font-semibold text-dark">🖥️ Admin Panel – Menu Management</span>
+              Filament Admin powers CRUD operations for menu data, letting staff adjust titles, prices, categories, promo flags, stock, and availability in real time.
+            </figcaption>
+          </figure>
+          <figure class="screenshot-card">
+            <div class="screenshot-media">
+              <img src="/assets/ss/ollies6.png" alt="Admin Dashboard – Sales Overview" loading="lazy" />
+            </div>
+            <figcaption class="screenshot-caption text-sm text-dark/70">
+              <span class="font-semibold text-dark">📊 Admin Dashboard – Sales Overview</span>
+              Administrators track total menus, tables, sales, and transactions with interactive sales charts and top-selling menu insights for smarter decisions.
+            </figcaption>
+          </figure>
         </div>
       </section>
 
